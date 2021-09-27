@@ -38,4 +38,4 @@ const knowledge = [
   },
 ];
 
-export default skills;
+export default knowledge;
