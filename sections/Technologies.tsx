@@ -6,7 +6,9 @@ import Technology from "../components/Technologies/Technology";
 export type KnowledgeType = {
   id: number;
   title: string;
-  skills: [{ name: string }];
+  skills: {
+    name: string;
+  }[];
 };
 
 const Technologies: FunctionComponent = () => {
