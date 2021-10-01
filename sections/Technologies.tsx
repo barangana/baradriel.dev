@@ -1,6 +1,10 @@
 import { FunctionComponent } from "react";
+import { IconType } from "react-icons/lib";
 
+// Utils
 import knowledges from "../utils/skills";
+
+// Components
 import Technology from "../components/Technologies/Technology";
 
 export type KnowledgeType = {
@@ -8,6 +12,7 @@ export type KnowledgeType = {
   title: string;
   skills: {
     name: string;
+    img: IconType;
   }[];
 };
 

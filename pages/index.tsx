@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import React from "react";
 
+// Sections
 import Opening from "../sections/Opening";
 import About from "../sections/About";
 import Technologies from "../sections/Technologies";

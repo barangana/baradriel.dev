@@ -6,6 +6,7 @@ const infos = {
   about:
     "Hello! My name is Adriel, I am a full stack developer and I enjoy creating and learning new things. It all started when I was a child and I got hooked on to video games and ended up wanting to learn more on how they were made.",
   what: "Full-Stack Developer",
+  github: "https://github.com/barangana",
 };
 
 export default infos;
