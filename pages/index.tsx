@@ -10,9 +10,12 @@ import Contact from "../sections/Contact";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
+// Styles
+import { Container } from "@chakra-ui/react";
+
 const Home: NextPage = () => {
   return (
-    <main>
+    <Container maxW="container.xl">
       <Header />
       <Opening />
       <About />
@@ -20,7 +23,7 @@ const Home: NextPage = () => {
       <Projects />
       <Contact />
       <Footer />
-    </main>
+    </Container>
   );
 };
 
