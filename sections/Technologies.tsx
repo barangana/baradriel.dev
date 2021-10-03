@@ -7,6 +7,9 @@ import knowledges from "../utils/skills";
 // Components
 import Technology from "../components/Technologies/Technology";
 
+// Styles
+import { Heading, Box, Container } from "@chakra-ui/react";
+
 export type KnowledgeType = {
   id: number;
   title: string;
@@ -18,12 +21,14 @@ export type KnowledgeType = {
 
 const Technologies: FunctionComponent = () => {
   return (
-    <section>
-      <h1>Technologies Section</h1>
-      {knowledges.map((knowledge) => {
-        return <Technology key={knowledge.id} knowledge={knowledge} />;
-      })}
-    </section>
+    <Box height="100vh">
+      <Container maxW="3xl">
+        <Heading>Some of the technologies I&apos;ve worked with.</Heading>
+        {knowledges.map((knowledge) => {
+          return <Technology key={knowledge.id} knowledge={knowledge} />;
+        })}
+      </Container>
+    </Box>
   );
 };
 

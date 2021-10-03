@@ -1,17 +1,26 @@
 import { FunctionComponent } from "react";
+import Link from "next/link";
+
 import info from "../utils/info";
 
 // Styles
-import { Heading } from "@chakra-ui/react";
+import { Heading, Box, Container, Button, Text } from "@chakra-ui/react";
 
 const About: FunctionComponent = () => {
   return (
-    <section>
-      <Heading size="md">Hi my name is</Heading>
-      <Heading>{info.title}</Heading>
-      <Heading>{info.header}</Heading>
-      <p>{info.who}</p>
-    </section>
+    <Box height="100vh">
+      <Container maxWidth="2xl" position="relative" top="20%" right="10%">
+        <Heading size="md" pb="1em" fontSize="2xl">
+          Hi, my name is
+        </Heading>
+        <Heading fontSize="6xl">{info.title}</Heading>
+        <Heading pb="1em">{info.header}</Heading>
+        <Text pb="2em">{info.who}</Text>
+        <Button size="md" variant="outline" colorScheme="teal">
+          <Link href={info.github}>GitHub</Link>
+        </Button>
+      </Container>
+    </Box>
   );
 };
 

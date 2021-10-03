@@ -15,7 +15,7 @@ import { Container } from "@chakra-ui/react";
 
 const Home: NextPage = () => {
   return (
-    <Container maxW="container.xl">
+    <div>
       <Header />
       <Opening />
       <About />
@@ -23,7 +23,7 @@ const Home: NextPage = () => {
       <Projects />
       <Contact />
       <Footer />
-    </Container>
+    </div>
   );
 };
 

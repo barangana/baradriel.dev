@@ -7,6 +7,7 @@ const infos = {
   what: "Full-Stack Developer",
   github: "https://github.com/barangana",
   email: "baranganadriel@gmail.com",
+  copyrights: `© ${new Date().getFullYear()} all rights reserved.`,
 };
 
 export default infos;
