@@ -1,8 +1,16 @@
 import Link from "next/link";
 import { FunctionComponent } from "react";
 
+// Utils
+import info from "../utils/info";
+
 // Styles
 import { Flex, Stack, Button } from "@chakra-ui/react";
+
+const resumeHandler = (e: any): void => {
+  e.preventDefault();
+  location.href = `${info.resume}`;
+};
 
 const Header: FunctionComponent = () => {
   return (
@@ -15,6 +23,7 @@ const Header: FunctionComponent = () => {
         <Link href={"/#"}>Projects</Link>
         <Link href={"/#"}>Technologies</Link>
         <Link href={"/#"}>Contact</Link>
+        <Button onClick={resumeHandler}>Resume</Button>
       </Stack>
     </Flex>
   );
