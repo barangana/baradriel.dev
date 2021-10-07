@@ -18,13 +18,20 @@ const Header: FunctionComponent = () => {
       <Flex>
         <p>Adriel Barangan.</p>
       </Flex>
-      <Stack direction={{ base: "column", md: "row" }} pl={1450}>
+      <Stack direction={{ base: "column", md: "row" }} pl={1370} pr={4}>
         <Link href={"/#"}>About</Link>
         <Link href={"/#"}>Projects</Link>
         <Link href={"/#"}>Technologies</Link>
         <Link href={"/#"}>Contact</Link>
-        <Button onClick={resumeHandler}>Resume</Button>
       </Stack>
+      <Button
+        size="md"
+        variant="outline"
+        colorScheme="teal"
+        onClick={resumeHandler}
+      >
+        Resume
+      </Button>
     </Flex>
   );
 };

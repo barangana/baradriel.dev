@@ -13,8 +13,8 @@ const handleMail = (e: any) => {
 
 const Contact: FunctionComponent = () => {
   return (
-    <Box height="100vh">
-      <Container>
+    <Box height="100vh" bg="pink">
+      <Container position="relative" top="35%">
         <Heading>Let&apos;s talk.</Heading>
         <p>
           Have an idea for a project, want to work together or just chat? Do not

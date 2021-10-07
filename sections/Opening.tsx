@@ -8,7 +8,7 @@ import { Heading, Box, Container, Button, Text } from "@chakra-ui/react";
 
 const About: FunctionComponent = () => {
   return (
-    <Box height="100vh">
+    <Box height="100vh" bg="red">
       <Container maxWidth="2xl" position="relative" top="20%" right="10%">
         <Heading size="md" pb="1em" fontSize="2xl">
           Hi, my name is
