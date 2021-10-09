@@ -7,7 +7,7 @@ const infos = {
   about_two:
     "Currently, my main focus is to keep on improving my knowledge on technologies and not fall behind. I am continuously learning about programming, software and hardware. My latest interest have been investments and cryptocurrency.",
   about_three:
-    "Here are some of the technologies I've been working with recently:",
+    "Here are some of the technologies I've been working in depth with recently:",
   about_tech: [
     "JavaScript(ES6)",
     "Next.js",
