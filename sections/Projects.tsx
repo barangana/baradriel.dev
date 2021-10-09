@@ -15,6 +15,7 @@ export type ProjectsType = {
   description: string;
   status: string;
   tech: string[];
+  link: string;
 };
 
 const Projects: FunctionComponent = () => {

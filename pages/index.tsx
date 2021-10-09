@@ -11,7 +11,6 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 // Styles
-import { Container } from "@chakra-ui/react";
 
 const Home: NextPage = () => {
   return (
