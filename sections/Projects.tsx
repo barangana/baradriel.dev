@@ -20,7 +20,7 @@ export type ProjectsType = {
 
 const Projects: FunctionComponent = () => {
   return (
-    <Box height="100vh">
+    <Box height="100vh" id="projects">
       <Container position="relative" top="15%">
         <Heading>Projects Section</Heading>
         {personals.map((singleProject) => {
