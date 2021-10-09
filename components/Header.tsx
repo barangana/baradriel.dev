@@ -19,10 +19,10 @@ const Header: FunctionComponent = () => {
         <p>Adriel Barangan.</p>
       </Flex>
       <Stack direction={{ base: "column", md: "row" }} pl={1370} pr={4}>
-        <Link href={"/#"}>About</Link>
-        <Link href={"/#"}>Projects</Link>
-        <Link href={"/#"}>Technologies</Link>
-        <Link href={"/#"}>Contact</Link>
+        <Link href={"#about"}>About</Link>
+        <Link href={"#projects"}>Projects</Link>
+        <Link href={"#technologies"}>Technologies</Link>
+        <Link href={"#contact"}>Contact</Link>
       </Stack>
       <Button
         size="md"
