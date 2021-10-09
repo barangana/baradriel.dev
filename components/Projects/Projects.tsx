@@ -1,10 +1,11 @@
 import { FunctionComponent } from "react";
+import Link from "next/link";
 
 // Types
 import { ProjectsType } from "../../sections/Projects";
 
 // Styles
-import { Heading, Box } from "@chakra-ui/react";
+import { Heading, Box, Text, SimpleGrid, Container } from "@chakra-ui/react";
 
 type Props = {
   project: ProjectsType;
@@ -12,14 +13,15 @@ type Props = {
 
 const Projects: FunctionComponent<Props> = ({ project }) => {
   return (
-    <Box>
-      <Heading>{project.title}</Heading>
-      <p>Description: {project.description}</p>
-      <p>Status: {project.status}</p>
+    <SimpleGrid columns={3}>
       {project.tech.map((singleTech) => {
-        return <p>{singleTech}</p>;
+        return (
+          <Box key={singleTech.length + 1}>
+            <Text>{singleTech}</Text>
+          </Box>
+        );
       })}
-    </Box>
+    </SimpleGrid>
   );
 };
 

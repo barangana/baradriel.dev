@@ -22,7 +22,7 @@ export type KnowledgeType = {
 const Technologies: FunctionComponent = () => {
   return (
     <Box height="100vh" bg="green">
-      <Container maxW="3xl">
+      <Container maxW="3xl" position="relative" top="25%">
         <Heading>Some of the technologies I&apos;ve worked with.</Heading>
         {knowledges.map((knowledge) => {
           return <Technology key={knowledge.id} knowledge={knowledge} />;

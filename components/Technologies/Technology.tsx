@@ -13,15 +13,16 @@ type Props = {
 const Technology: FunctionComponent<Props> = ({ knowledge }) => {
   return (
     <SimpleGrid columns={3}>
-      <Heading>{knowledge.title}</Heading>
-      {knowledge.skills.map((skill) => {
-        return (
-          <div key={knowledge.id}>
-            {skill.name}
-            <Icon as={skill.img} />
-          </div>
-        );
-      })}
+      <Box>
+        {knowledge.skills.map((skill) => {
+          return (
+            <Box key={knowledge.id}>
+              {skill.name}
+              <Icon as={skill.img} />
+            </Box>
+          );
+        })}
+      </Box>
     </SimpleGrid>
   );
 };
