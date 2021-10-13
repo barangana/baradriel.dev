@@ -22,7 +22,7 @@ const projects = [
     title: "Movie Application",
     description:
       "Allows the user to create an account, search for movies, store movies as liked movies, leave comments and stars.",
-    status: "Dropped",
+    status: "To go back",
     tech: ["React.js, Node.js, Express, MongoDB, SCSS, TMDB Api"],
     link: "https://github.com/barangana/movie-db-app",
   },

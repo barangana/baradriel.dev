@@ -16,13 +16,19 @@ const Projects: FC<Props> = ({ project }) => {
     <Box id="technology">
       <Box borderWidth="1px" borderRadius="lg" width="500px">
         <Heading>{project.title}</Heading>
-        {project.tech.map((singleTech, i) => {
-          return (
-            <Box key={i}>
-              <Text>{singleTech}</Text>
-            </Box>
-          );
-        })}
+        <Box>
+          <Text>{project.description}</Text>
+          <Text>{project.status}</Text>
+
+          {project.tech.map((singleTech, i) => {
+            return (
+              <Box key={i}>
+                <Text>{singleTech}</Text>
+              </Box>
+            );
+          })}
+          <Link href={project.link}>Link to project repository</Link>
+        </Box>
       </Box>
     </Box>
   );
