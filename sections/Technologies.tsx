@@ -8,7 +8,7 @@ import knowledges from "../utils/skills";
 import Technology from "../components/Technologies/Technology";
 
 // Styles
-import { Heading, Box } from "@chakra-ui/react";
+import { Heading, Box, SimpleGrid } from "@chakra-ui/react";
 
 export type KnowledgeType = {
   id: number;
@@ -21,15 +21,15 @@ export type KnowledgeType = {
 
 const Technologies: FC = () => {
   return (
-    <Box id="technologies" height="100vh">
+    <Box height="100vh" id="technologies" borderWidth="1px" borderRadius="lg">
       <Box position="absolute">
         <Box position="relative">
           <Heading>Some of the technologies I&apos;ve worked with</Heading>
-          <Box>
+          <SimpleGrid columns={3}>
             {knowledges.map((knowledge) => {
               return <Technology key={knowledge.id} knowledge={knowledge} />;
             })}
-          </Box>
+          </SimpleGrid>
         </Box>
       </Box>
     </Box>
