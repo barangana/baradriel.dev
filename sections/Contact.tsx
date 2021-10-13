@@ -1,4 +1,4 @@
-import { FunctionComponent } from "react";
+import { FC } from "react";
 
 // Styles
 import {
@@ -18,7 +18,7 @@ const handleMail = (e: any) => {
   location.href = `mailto:${info.email}`;
 };
 
-const Contact: FunctionComponent = () => {
+const Contact: FC = () => {
   return (
     <Box height="100vh" id="contact">
       <Container position="relative" top="35%">

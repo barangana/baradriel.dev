@@ -1,4 +1,4 @@
-import { FunctionComponent } from "react";
+import { FC } from "react";
 import Link from "next/link";
 
 import info from "../utils/info";
@@ -6,7 +6,7 @@ import info from "../utils/info";
 // Styles
 import { Heading, Box, Container, Button, Text } from "@chakra-ui/react";
 
-const About: FunctionComponent = () => {
+const About: FC = () => {
   return (
     <Box height="100vh">
       <Container maxWidth="2xl" position="relative" top="20%" right="10%">

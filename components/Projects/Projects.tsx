@@ -1,27 +1,30 @@
-import { FunctionComponent } from "react";
+import { FC } from "react";
 import Link from "next/link";
 
 // Types
 import { ProjectsType } from "../../sections/Projects";
 
 // Styles
-import { Heading, Box, Text, SimpleGrid, Container } from "@chakra-ui/react";
+import { Heading, Box, Text } from "@chakra-ui/react";
 
 type Props = {
   project: ProjectsType;
 };
 
-const Projects: FunctionComponent<Props> = ({ project }) => {
+const Projects: FC<Props> = ({ project }) => {
   return (
-    <SimpleGrid columns={3}>
-      {project.tech.map((singleTech) => {
-        return (
-          <Box key={singleTech.length + 1}>
-            <Text>{singleTech}</Text>
-          </Box>
-        );
-      })}
-    </SimpleGrid>
+    <Box id="technology">
+      <Box borderWidth="1px" borderRadius="lg" width="500px">
+        <Heading>{project.title}</Heading>
+        {project.tech.map((singleTech, i) => {
+          return (
+            <Box key={i}>
+              <Text>{singleTech}</Text>
+            </Box>
+          );
+        })}
+      </Box>
+    </Box>
   );
 };
 

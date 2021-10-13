@@ -1,4 +1,4 @@
-import { FunctionComponent } from "react";
+import { FC } from "react";
 import Link from "next/link";
 
 // Utils
@@ -8,7 +8,7 @@ import info from "../utils/info";
 // Styles
 import { Icon, Box, Center, Text } from "@chakra-ui/react";
 
-const Footer: FunctionComponent = () => {
+const Footer: FC = () => {
   return (
     <Box>
       <Center>

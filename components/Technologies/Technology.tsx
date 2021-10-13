@@ -1,29 +1,30 @@
-import { FunctionComponent } from "react";
+import { FC } from "react";
 
 // Types
 import { KnowledgeType } from "../../sections/Technologies";
 
 // Styles
-import { Icon, SimpleGrid, Heading, Box } from "@chakra-ui/react";
+import { Icon, Heading, Box, Text, HStack } from "@chakra-ui/react";
 
 type Props = {
   knowledge: KnowledgeType;
 };
 
-const Technology: FunctionComponent<Props> = ({ knowledge }) => {
+const Technology: FC<Props> = ({ knowledge }) => {
   return (
-    <SimpleGrid columns={3}>
-      <Box>
-        {knowledge.skills.map((skill) => {
+    <Box id="technology">
+      <Box borderWidth="1px" borderRadius="lg" width="500px">
+        <Heading>{knowledge.title}</Heading>
+        {knowledge.skills.map((skill, i) => {
           return (
-            <Box key={knowledge.id}>
-              {skill.name}
-              <Icon as={skill.img} />
+            <Box key={i}>
+              <Text>{skill.name}</Text>
+              <Icon as={skill.img} boxSize="8"></Icon>
             </Box>
           );
         })}
       </Box>
-    </SimpleGrid>
+    </Box>
   );
 };
 

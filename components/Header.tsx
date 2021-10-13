@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FunctionComponent } from "react";
+import { FC } from "react";
 
 // Utils
 import info from "../utils/info";
@@ -12,7 +12,7 @@ const resumeHandler = (e: any): void => {
   location.href = `${info.resume}`;
 };
 
-const Header: FunctionComponent = () => {
+const Header: FC = () => {
   return (
     <Flex px={5} py={5} alignItems="center">
       <Flex>

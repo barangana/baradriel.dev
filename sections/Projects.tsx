@@ -1,4 +1,4 @@
-import { FunctionComponent } from "react";
+import { FC } from "react";
 
 // Utils
 import personals from "../utils/projects";
@@ -7,7 +7,7 @@ import personals from "../utils/projects";
 import Project from "../components/Projects/Projects";
 
 // Styles
-import { Heading, Box, Container } from "@chakra-ui/react";
+import { Heading, Box } from "@chakra-ui/react";
 
 export type ProjectsType = {
   id: number;
@@ -18,15 +18,19 @@ export type ProjectsType = {
   link: string;
 };
 
-const Projects: FunctionComponent = () => {
+const Projects: FC = () => {
   return (
-    <Box height="100vh" id="projects">
-      <Container position="relative" top="15%">
-        <Heading>Projects Section</Heading>
-        {personals.map((singleProject) => {
-          return <Project key={singleProject.id} project={singleProject} />;
-        })}
-      </Container>
+    <Box id="projects" height="100vh" borderRadius="lg" borderWidth="1px">
+      <Box position="absolute">
+        <Box position="relative">
+          <Heading>Projects Section</Heading>
+          <Box>
+            {personals.map((singleProject) => {
+              return <Project key={singleProject.id} project={singleProject} />;
+            })}
+          </Box>
+        </Box>
+      </Box>
     </Box>
   );
 };
