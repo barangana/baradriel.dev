@@ -16,28 +16,30 @@ const Contact: FC = () => {
     <Box height="100vh" id="contact">
       <Box position="relative" top="35%">
         <Center>
-          <Heading pt={5} pb={5}>
+          <Heading pt="5" pb="5" size="2xl">
             Let&apos;s talk.
           </Heading>
         </Center>
 
         <Center>
-          <Text pt={5} pb={5}>
+          <Text pt="12" pb="6">
             Have an idea for a project, want to work together or just chat? Do
             not be shy and send me an email!
           </Text>
         </Center>
 
-        <Center>
-          <Button
-            size="md"
-            variant="outline"
-            colorScheme="teal"
-            onClick={handleMail}
-          >
-            Send Mail
-          </Button>
-        </Center>
+        <Box pt="12">
+          <Center>
+            <Button
+              size="md"
+              variant="outline"
+              colorScheme="teal"
+              onClick={handleMail}
+            >
+              Send Mail
+            </Button>
+          </Center>
+        </Box>
       </Box>
     </Box>
   );

@@ -14,7 +14,7 @@ const resumeHandler = (e: any): void => {
 
 const Header: FC = () => {
   return (
-    <Flex px={5} py={5} alignItems="center">
+    <Flex px="5" py="5" alignItems="center">
       <Flex>
         <p>Adriel Barangan.</p>
       </Flex>

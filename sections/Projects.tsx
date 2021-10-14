@@ -22,9 +22,11 @@ const Projects: FC = () => {
   return (
     <Box id="projects" height="100vh">
       <Box position="absolute">
-        <Heading>Some projects I&apos;ve worked on</Heading>
+        <Heading position="relative" left="80" pt="6">
+          Some projects I&apos;ve worked on
+        </Heading>
 
-        <Box position="relative" top="20" left="64">
+        <Box position="relative" top="20" left="80">
           <SimpleGrid columns={3}>
             {personals.map((singleProject) => {
               return <Project key={singleProject.id} project={singleProject} />;
