@@ -30,9 +30,9 @@ const projects = [
     id: 4,
     title: "CipherPact Application",
     description:
-      "Allows the user to create an account, search for movies, store movies as liked movies, leave comments and stars.",
-    status: "To go back",
-    tech: "React.js, TypeScript, Styled-Components",
+      "Frontend application of CipherPact. A suite of financial agreements on Cardano and Ergo. Allows escrows with collateral, zero-coupon bonds and contract for differences into smart contracts into a form of web user interface.",
+    status: "In progress",
+    tech: "React.js, TypeScript, Styled-Components, Ergo, Blockfrost",
     link: "https://github.com/CipherSpell/cipherpact-frontend",
   },
 ];
