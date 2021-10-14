@@ -1,12 +1,12 @@
 const projects = [
   {
     id: 1,
-    title: "CipherPact",
+    title: "CipherPact Landing Page",
     description:
-      "Building the landing page and web application of CipherPact which is a suite of financial agreements on Cardano and Ergo.",
+      "CipherPact's landing page which serves as a static website to display features of the CipherPact Frontend application.",
     status: "In progress",
-    tech: ["Next.js", "React.js", "Ergo", "Blockfrost", "Styled-Components"],
-    link: "https://github.com/CipherSpell",
+    tech: "Next.js, Styled-Components",
+    link: "https://github.com/CipherSpell/cipherpact-landing",
   },
   {
     id: 2,
@@ -14,7 +14,7 @@ const projects = [
     description:
       "Utilizes the Jikan API and makes GET requests to the endpoint. Returns data and displays general information about the show.",
     status: "Completed (To go back and improve)",
-    tech: ["React.js", "Jikan API"],
+    tech: "React.js, Jikan API",
     link: "https://github.com/barangana/anime-database-search",
   },
   {
@@ -23,8 +23,17 @@ const projects = [
     description:
       "Allows the user to create an account, search for movies, store movies as liked movies, leave comments and stars.",
     status: "To go back",
-    tech: ["React.js, Node.js, Express, MongoDB, SCSS, TMDB Api"],
+    tech: "React.js, Node.js, Express, MongoDB, SCSS, TMDB Api",
     link: "https://github.com/barangana/movie-db-app",
+  },
+  {
+    id: 4,
+    title: "CipherPact Application",
+    description:
+      "Allows the user to create an account, search for movies, store movies as liked movies, leave comments and stars.",
+    status: "To go back",
+    tech: "React.js, TypeScript, Styled-Components",
+    link: "https://github.com/CipherSpell/cipherpact-frontend",
   },
 ];
 
