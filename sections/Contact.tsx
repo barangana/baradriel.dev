@@ -1,14 +1,7 @@
 import { FC } from "react";
 
 // Styles
-import {
-  Button,
-  Heading,
-  Text,
-  Box,
-  Container,
-  Center,
-} from "@chakra-ui/react";
+import { Button, Heading, Text, Box, Center } from "@chakra-ui/react";
 
 // Utils
 import info from "../utils/info";
@@ -21,7 +14,7 @@ const handleMail = (e: any) => {
 const Contact: FC = () => {
   return (
     <Box height="100vh" id="contact">
-      <Container position="relative" top="35%">
+      <Box position="relative" top="35%">
         <Center>
           <Heading pt={5} pb={5}>
             Let&apos;s talk.
@@ -34,6 +27,7 @@ const Contact: FC = () => {
             not be shy and send me an email!
           </Text>
         </Center>
+
         <Center>
           <Button
             size="md"
@@ -44,7 +38,7 @@ const Contact: FC = () => {
             Send Mail
           </Button>
         </Center>
-      </Container>
+      </Box>
     </Box>
   );
 };
