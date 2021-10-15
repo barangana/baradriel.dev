@@ -15,7 +15,9 @@ const About: FC = () => {
         </Heading>
         <Heading fontSize="6xl">{info.title}</Heading>
         <Heading pb="1em">{info.header}</Heading>
-        <Text pb="2em">{info.who}</Text>
+        <Text pb="2em" fontSize="lg">
+          {info.who}
+        </Text>
         <Button size="md" variant="outline" colorScheme="teal">
           <Link href={info.github}>GitHub</Link>
         </Button>
