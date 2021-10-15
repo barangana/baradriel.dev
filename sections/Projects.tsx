@@ -20,16 +20,23 @@ export type ProjectsType = {
 
 const Projects: FC = () => {
   return (
-    <Box id="projects" height="100vh">
+    <Box id="projects" height="120vh">
       <Box position="absolute">
         <Heading position="relative" left="80" pt="6">
           Some projects I&apos;ve worked on
+        </Heading>
+        <Heading size="md" position="relative" left="80" pt="6">
+          As time goes on I will be adding more
         </Heading>
 
         <Box position="relative" top="20" left="80">
           <SimpleGrid columns={3}>
             {personals.map((singleProject) => {
-              return <Project key={singleProject.id} project={singleProject} />;
+              return (
+                <Box p="2" key={singleProject.id}>
+                  <Project project={singleProject} />
+                </Box>
+              );
             })}
           </SimpleGrid>
         </Box>

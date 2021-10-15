@@ -11,10 +11,11 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 // Styles
+import { Box } from "@chakra-ui/react";
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <Box bg="brand.100">
       <Header />
       <Opening />
       <About />
@@ -22,7 +23,7 @@ const Home: NextPage = () => {
       <Projects />
       <Contact />
       <Footer />
-    </div>
+    </Box>
   );
 };
 

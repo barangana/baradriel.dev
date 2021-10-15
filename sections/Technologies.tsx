@@ -21,13 +21,19 @@ export type KnowledgeType = {
 
 const Technologies: FC = () => {
   return (
-    <Box height="100vh" id="technologies" borderWidth="1px" borderRadius="lg">
-      <Box position="absolute">
-        <Box position="relative">
-          <Heading>Some of the technologies I&apos;ve worked with</Heading>
+    <Box height="100vh" id="technologies">
+      <Box position="absolute" pt="16">
+        <Box position="relative" left="80">
+          <Heading pb="16" color="brand.600">
+            Some of the technologies I&apos;ve worked with
+          </Heading>
           <SimpleGrid columns={3}>
             {knowledges.map((knowledge) => {
-              return <Technology key={knowledge.id} knowledge={knowledge} />;
+              return (
+                <Box key={knowledge.id}>
+                  <Technology knowledge={knowledge} />
+                </Box>
+              );
             })}
           </SimpleGrid>
         </Box>
