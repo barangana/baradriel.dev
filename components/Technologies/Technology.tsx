@@ -22,9 +22,7 @@ const Technology: FC<Props> = ({ knowledge }) => {
   return (
     <Flex>
       <Box borderRadius="lg" borderWidth="1px" height="450px" width="400px">
-        <Heading p="5" color="brand.600">
-          {knowledge.title}
-        </Heading>
+        <Heading p="5">{knowledge.title}</Heading>
         <SimpleGrid columns={3}>
           {knowledge.skills.map((skill, i) => {
             return (
@@ -36,7 +34,9 @@ const Technology: FC<Props> = ({ knowledge }) => {
                 </Center>
                 <Center>
                   <Box>
-                    <Text>{skill.name}</Text>
+                    <Text color="brand.600" fontWeight="bold">
+                      {skill.name}
+                    </Text>
                   </Box>
                 </Center>
               </Box>

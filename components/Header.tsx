@@ -36,7 +36,8 @@ const Header: FC = () => {
             onClick={resumeHandler}
             size="md"
             variant="outline"
-            colorScheme="teal"
+            color="brand.600"
+            border="2px"
           >
             Resume
           </Button>

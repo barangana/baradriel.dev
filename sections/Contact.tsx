@@ -17,7 +17,7 @@ const Contact: FC = () => {
     <Box height="100vh" id="contact">
       <Box position="relative" top="35%">
         <Center>
-          <Heading pt="5" pb="5" size="2xl">
+          <Heading pt="5" pb="5" size="2xl" color="brand.600">
             Let&apos;s talk.
           </Heading>
         </Center>
@@ -33,14 +33,20 @@ const Contact: FC = () => {
               <Button
                 size="md"
                 variant="outline"
-                colorScheme="teal"
+                border="2px"
+                color="brand.600"
                 onClick={handleMail}
               >
                 Send Mail
               </Button>
             </Box>
             <Box>
-              <Button size="md" variant="outline" colorScheme="teal">
+              <Button
+                size="md"
+                variant="outline"
+                border="2px"
+                color="brand.600"
+              >
                 <Link href={info.linkedin}>Linkedin</Link>
               </Button>
             </Box>

@@ -22,7 +22,7 @@ type Props = {
 const Projects: FC<Props> = ({ project }) => {
   return (
     <Box bg="brand.200">
-      <Box width="425px" height="425px" p="6">
+      <Box width="425px" height="400px" p="6">
         <Center>
           <HStack>
             <Heading pb="4" pt="4" size="md" color="brand.600">
@@ -40,12 +40,12 @@ const Projects: FC<Props> = ({ project }) => {
         <Box>
           <Box>
             <Box pt="10" pl="4">
-              <Text color="brand.600">{project.description}</Text>
+              <Text>{project.description}</Text>
             </Box>
             <Box pt="8" pl="4">
               <Text>{project.status}</Text>
             </Box>
-            <Box pt="6" pl="4">
+            <Box pt="6" pl="4" color="brand.600" fontWeight="bold">
               <Text>{project.tech}</Text>
             </Box>
           </Box>

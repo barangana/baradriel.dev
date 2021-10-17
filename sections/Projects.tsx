@@ -22,7 +22,7 @@ const Projects: FC = () => {
   return (
     <Box id="projects" height="120vh">
       <Box position="absolute">
-        <Heading position="relative" left="80" pt="6">
+        <Heading position="relative" left="80" pt="6" color="brand.600">
           Some projects I&apos;ve worked on
         </Heading>
         <Heading size="md" position="relative" left="80" pt="6">
