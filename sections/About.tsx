@@ -21,7 +21,7 @@ const About: FC = () => {
         <Box position="relative" top="40" width="100%">
           <Flex>
             <Box pl="8" pr="6" width="50%">
-              <Heading pb="8" color="brand.600">
+              <Heading pb="8" color="brand.600" size="xl">
                 About me
               </Heading>
               <Text pb="6" fontSize="lg">

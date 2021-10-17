@@ -35,6 +35,7 @@ const Contact: FC = () => {
                 variant="outline"
                 border="2px"
                 color="brand.600"
+                bgColor="brand.200"
                 onClick={handleMail}
               >
                 Send Mail
@@ -46,6 +47,7 @@ const Contact: FC = () => {
                 variant="outline"
                 border="2px"
                 color="brand.600"
+                bgColor="brand.200"
               >
                 <Link href={info.linkedin}>Linkedin</Link>
               </Button>
