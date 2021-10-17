@@ -4,24 +4,28 @@ import Link from "next/link";
 import info from "../utils/info";
 
 // Styles
-import { Heading, Box, Container, Button, Text } from "@chakra-ui/react";
+import { Heading, Box, Button, Text } from "@chakra-ui/react";
 
 const About: FC = () => {
   return (
     <Box height="100vh">
-      <Container maxWidth="2xl" position="relative" top="20%" right="10%">
-        <Heading size="md" pb="1em" fontSize="2xl">
-          Hi, my name is
-        </Heading>
-        <Heading fontSize="6xl">{info.title}</Heading>
-        <Heading pb="1em">{info.header}</Heading>
-        <Text pb="2em" fontSize="lg">
-          {info.who}
-        </Text>
-        <Button size="md" variant="outline" colorScheme="teal">
-          <Link href={info.github}>GitHub</Link>
-        </Button>
-      </Container>
+      <Box position="absolute">
+        <Box position="relative" top="80" left="96">
+          <Text pb="6">Welcome, my name is </Text>
+          <Heading>
+            <Link href={info.linkedin}>{info.title}</Link>
+          </Heading>
+          <Heading color="brand.600" pb="6">
+            {info.what}
+          </Heading>
+          <Text width="80%">{info.who}</Text>
+          <Box pt="6">
+            <Button size="md" variant="outline" colorScheme="teal">
+              <Link href={info.github}>Github</Link>
+            </Button>
+          </Box>
+        </Box>
+      </Box>
     </Box>
   );
 };
