@@ -18,8 +18,8 @@ const About: FC = () => {
   return (
     <Box height="100vh" id="about">
       <Box position="absolute" left="20%">
-        <Box position="relative" top="40" width="100%">
-          <Flex>
+        <Box position="relative" top="40">
+          <HStack w="100%">
             <Box pl="8" pr="6" width="50%">
               <Heading pb="8" color="brand.600" size="xl">
                 About me
@@ -46,7 +46,7 @@ const About: FC = () => {
             <Box pl="8" pt="6">
               <Image src="/selfie.jpg" alt="selfie" width={300} height={300} />
             </Box>
-          </Flex>
+          </HStack>
         </Box>
       </Box>
     </Box>
