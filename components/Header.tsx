@@ -1,11 +1,10 @@
-import Link from "next/link";
 import { FC } from "react";
 
 // Utils
 import info from "../utils/info";
 
 // Styles
-import { Button, Box, HStack } from "@chakra-ui/react";
+import { Button, Box, HStack, Link } from "@chakra-ui/react";
 
 const resumeHandler = (e: any): void => {
   e.preventDefault();
