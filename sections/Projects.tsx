@@ -18,7 +18,7 @@ export type ProjectsType = {
   link: string;
 };
 
-const Projects: FC = () => {
+const Projects: FC<ProjectsType> = () => {
   return (
     <Box id="projects" height="120vh">
       <Box position="absolute">

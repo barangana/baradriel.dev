@@ -19,7 +19,7 @@ export type KnowledgeType = {
   }>;
 };
 
-const Technologies: FC = () => {
+const Technologies: FC<KnowledgeType> = () => {
   return (
     <Box height="100vh" id="technologies">
       <Box position="absolute" pt="16">
