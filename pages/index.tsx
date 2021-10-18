@@ -15,7 +15,7 @@ import { Box } from "@chakra-ui/react";
 
 const Home: NextPage = () => {
   return (
-    <Box bg="brand.100">
+    <Box bg="brand.100" w={"100%"}>
       <Header />
       <Opening />
       <About />
