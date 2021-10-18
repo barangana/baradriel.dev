@@ -14,11 +14,11 @@ import {
   Center,
 } from "@chakra-ui/react";
 
-type Props = {
+type KnowledgeProps = {
   knowledge: KnowledgeType;
 };
 
-const Technology: FC<Props> = ({ knowledge }) => {
+const Technology: FC<KnowledgeProps> = ({ knowledge }) => {
   return (
     <Flex>
       <Box borderRadius="lg" borderWidth="1px" height="450px" width="400px">
