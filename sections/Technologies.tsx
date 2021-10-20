@@ -19,15 +19,15 @@ export type KnowledgeType = {
   }>;
 };
 
-const Technologies: FC<KnowledgeType> = () => {
+const Technologies: FC = () => {
   return (
     <Box height="100vh" id="technologies">
-      <Box position="absolute" pt="16">
-        <Box position="relative" left="80">
+      <Box position="absolute" pt="16" left="80">
+        <Box position="relative">
           <Heading pb="16" color="brand.600">
             Some of the technologies I&apos;ve worked with
           </Heading>
-          <SimpleGrid columns={3}>
+          <SimpleGrid columns={3} width="100%">
             {knowledges.map((knowledge) => {
               return (
                 <Box key={knowledge.id}>
