@@ -4,16 +4,16 @@ import { FC } from "react";
 import info from "../utils/info";
 
 // Styles
-import { Box, Center, Text } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 
 const Footer: FC = () => {
   return (
-    <Box>
-      <Center>
-        <Text pb="6">
+    <Box w="100%">
+      <Box>
+        <Text textAlign="center" pb="6">
           {info.copyrights} Designed & built by Adriel Barangan.
         </Text>
-      </Center>
+      </Box>
     </Box>
   );
 };
