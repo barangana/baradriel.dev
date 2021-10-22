@@ -28,7 +28,7 @@ const Header: FC = () => {
       <Box position="relative" float="right">
         <HStack>
           <NavButton buttons={buttons} />
-          <Box pr={["2", "4"]}>
+          <Box pr={["0", "4"]}>
             <Button
               onClick={resumeHandler}
               size="md"

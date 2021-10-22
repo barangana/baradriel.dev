@@ -21,16 +21,16 @@ export type KnowledgeType = {
 
 const Technologies: FC = () => {
   return (
-    <Box height="100vh" id="technologies">
-      <Box position="absolute" pt="16" left="80">
+    <Box id="technologies" height="100vh">
+      <Box position="absolute" left={["6", "80"]} pb="10" pt={["56", "16"]}>
         <Box position="relative">
           <Heading pb="16" color="brand.600">
             Some of the technologies I&apos;ve worked with
           </Heading>
-          <SimpleGrid columns={3} width="100%">
+          <SimpleGrid columns={[1, 2, 3]} width="100%">
             {knowledges.map((knowledge) => {
               return (
-                <Box key={knowledge.id}>
+                <Box key={knowledge.id} pr="6">
                   <Technology knowledge={knowledge} />
                 </Box>
               );
