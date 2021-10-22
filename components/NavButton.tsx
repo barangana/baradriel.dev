@@ -21,7 +21,9 @@ const NavButton: FC<ButtonProps> = ({ buttons }) => {
             _hover={{ color: "brand.600", textDecoration: "underline" }}
             pr="2"
           >
-            <Link href={button.link}>{button.label}</Link>
+            <Link href={button.link} fontWeight="bold">
+              {button.label}
+            </Link>
           </Box>
         );
       })}
