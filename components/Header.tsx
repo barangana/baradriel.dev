@@ -21,7 +21,7 @@ const resumeHandler = (e: any): void => {
 
 const Header: FC = () => {
   return (
-    <Box position="absolute" pt="6" w={["95%", "75%", "100%"]}>
+    <Box position="absolute" pt="6" w={["95%", "75%", "100%"]} as="header">
       <Box float="left" pl="1.75em">
         Adriel Barangan
       </Box>

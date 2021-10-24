@@ -14,7 +14,7 @@ const handleMail = (e: any) => {
 
 const Contact: FC = () => {
   return (
-    <Box height="100vh" id="contact">
+    <Box id="contact" as="section" minHeight="100vh">
       <Box position="relative" top="35%">
         <Heading pt="5" pb="5" size="2xl" color="brand.600" textAlign="center">
           Let&apos;s talk.

@@ -6,10 +6,10 @@ import info from "../utils/info";
 // Styles
 import { Heading, Box, Button, Text } from "@chakra-ui/react";
 
-const About: FC = () => {
+const Opening: FC = () => {
   return (
-    <Box height="100vh">
-      <Box position="absolute" top="64" left={["14", "32", "96"]}>
+    <Box id="opening" as="section" minHeight="100vh">
+      <Box position="absolute" top={["48", "64"]} left={["14", "32", "96"]}>
         <Text pb="6" fontSize="xl" fontWeight="bold" color="brand.600">
           Welcome, my name is
         </Text>
@@ -38,4 +38,4 @@ const About: FC = () => {
   );
 };
 
-export default About;
+export default Opening;
