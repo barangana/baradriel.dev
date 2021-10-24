@@ -40,13 +40,28 @@ const Projects: FC<Props> = ({ project }) => {
         <Box>
           <Box>
             <Box pt="10" pl="4">
-              <Text>{project.description}</Text>
+              <Text
+                width={["100%", "75%", "100%"]}
+                fontSize={["md", "sm", "md"]}
+              >
+                {project.description}
+              </Text>
             </Box>
             <Box pt="8" pl="4">
-              <Text>{project.status}</Text>
+              <Text
+                width={["100%", "75%", "100%"]}
+                fontSize={["md", "sm", "md"]}
+              >
+                {project.status}
+              </Text>
             </Box>
             <Box pt="6" pl="4" color="brand.600" fontWeight="bold">
-              <Text>{project.tech}</Text>
+              <Text
+                width={["100%", "75%", "100%"]}
+                fontSize={["md", "sm", "md"]}
+              >
+                {project.tech}
+              </Text>
             </Box>
           </Box>
         </Box>
