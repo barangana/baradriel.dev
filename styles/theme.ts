@@ -19,10 +19,6 @@ const theme = extendTheme({
       navy: "#0a192f",
     },
   },
-  fonts: {
-    heading: "",
-    body: "",
-  },
   config,
 });
 

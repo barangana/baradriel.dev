@@ -5,7 +5,7 @@ import NavButton from "./NavButton";
 import info from "../utils/info";
 
 // Styles
-import { Button, Box, HStack, Flex, Text } from "@chakra-ui/react";
+import { Button, HStack, Flex, Text } from "@chakra-ui/react";
 
 const buttons = [
   { label: "About", link: "#about" },
