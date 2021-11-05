@@ -3,12 +3,20 @@ import info from "../utils/info";
 import Image from "next/image";
 
 // Styles
-import { Heading, Box, Text, SimpleGrid } from "@chakra-ui/react";
+import { Heading, Box, Text, SimpleGrid, Flex } from "@chakra-ui/react";
 
 const About: FC = () => {
   return (
-    <Box as="section" id="about" minHeight="100vh">
-      <Box position="absolute" left={["8", "8", "96"]}>
+    <Flex
+      as="section"
+      id="about"
+      justify="center"
+      align="center"
+      marginLeft="4"
+      height="100vh"
+      pb="20vh"
+    >
+      <Box left={["8", "8", "96"]}>
         <SimpleGrid columns={[1, 1, 2]}>
           <Box>
             <Heading pb="8" color="brand.600" size="xl">
@@ -38,7 +46,7 @@ const About: FC = () => {
           </Box>
         </SimpleGrid>
       </Box>
-    </Box>
+    </Flex>
   );
 };
 

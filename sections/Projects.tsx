@@ -20,8 +20,14 @@ export type ProjectsType = {
 
 const Projects: FC = () => {
   return (
-    <Box id="projects" as="section" minHeight="120vh">
-      <Box position="absolute">
+    <Box
+      id="projects"
+      as="section"
+      marginBottom="2"
+      minHeight="100vh"
+      pb="15vh"
+    >
+      <Box>
         <Heading
           position="relative"
           left={["3", "3", "80"]}
@@ -34,7 +40,7 @@ const Projects: FC = () => {
           As time goes on I will be adding more
         </Heading>
 
-        <Box position="relative" top={["10", "20"]} left={["0", "0", "80"]}>
+        <Box top={["10", "20"]} left={["0", "0", "80"]}>
           <SimpleGrid columns={[1, 2, 3]}>
             {personals.map((singleProject) => {
               return (

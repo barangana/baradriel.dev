@@ -21,9 +21,15 @@ export type KnowledgeType = {
 
 const Technologies: FC = () => {
   return (
-    <Box id="technologies" as="section" minHeight="120vh">
+    <Box
+      id="technologies"
+      as="section"
+      marginBottom="2"
+      minHeight="100vh"
+      pb="15vh"
+    >
       <Box>
-        <Box position="absolute" left={["6", "80"]} pb="10" pt={["56", "16"]}>
+        <Box left={["6", "80"]} pb="10" pt={["56", "16"]}>
           <Heading pb="16" color="brand.600">
             Some of the technologies I&apos;ve worked with
           </Heading>

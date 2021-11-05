@@ -4,12 +4,19 @@ import Link from "next/link";
 import info from "../utils/info";
 
 // Styles
-import { Heading, Box, Button, Text } from "@chakra-ui/react";
+import { Heading, Box, Button, Text, Flex } from "@chakra-ui/react";
 
 const Opening: FC = () => {
   return (
-    <Box id="opening" as="section" minHeight="100vh">
-      <Box position="absolute" top={["48", "64"]} left={["14", "32", "96"]}>
+    <Flex
+      as="section"
+      justify="center"
+      align="center"
+      minHeight="100vh"
+      pb="20vh"
+      marginLeft="4"
+    >
+      <Box>
         <Text pb="6" fontSize="xl" fontWeight="bold" color="brand.600">
           Welcome, my name is
         </Text>
@@ -34,7 +41,7 @@ const Opening: FC = () => {
           </Button>
         </Box>
       </Box>
-    </Box>
+    </Flex>
   );
 };
 
