@@ -1,6 +1,6 @@
-import { FC } from "react";
+import { FC } from 'react';
 
-import { Flex, Box, Link } from "@chakra-ui/react";
+import { Flex, Box, Link } from '@chakra-ui/react';
 
 type Button = {
   label: string;
@@ -18,10 +18,10 @@ const NavButton: FC<ButtonProps> = ({ buttons }) => {
         return (
           <Box
             key={i}
-            _hover={{ color: "brand.600", textDecoration: "underline" }}
-            pr="2"
+            _hover={{ color: 'brand.600', textDecoration: 'underline' }}
+            pr='2'
           >
-            <Link href={button.link} fontWeight="bold">
+            <Link href={button.link} fontWeight='bold'>
               {button.label}
             </Link>
           </Box>
