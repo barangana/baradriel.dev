@@ -1,12 +1,12 @@
-import { FC } from 'react';
+import { FC } from 'react'
 
 // Utils
-import info from '../utils/info';
+import info from '../../utils/info'
 
 // Styles
-import { Box, Text } from '@chakra-ui/react';
+import { Box, Text } from '@chakra-ui/react'
 
-const Footer: FC = () => {
+export const Footer: FC = () => {
   return (
     <Box w='100%'>
       <Box>
@@ -15,7 +15,5 @@ const Footer: FC = () => {
         </Text>
       </Box>
     </Box>
-  );
-};
-
-export default Footer;
+  )
+}

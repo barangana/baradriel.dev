@@ -1,30 +1,18 @@
-import type { NextPage } from "next";
-import React from "react";
+import type { NextPage } from 'next'
+import React from 'react'
 
 // Sections
-import Opening from "../sections/Opening";
-import About from "../sections/About";
-import Technologies from "../sections/Technologies";
-import Projects from "../sections/Projects";
-import Contact from "../sections/Contact";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 
 // Styles
-import { Box } from "@chakra-ui/react";
+import { Box } from '@chakra-ui/react'
+import { Layout } from '../components'
 
 const Home: NextPage = () => {
   return (
-    <Box bg="brand.100" minHeight="100vh" as="main">
-      <Header />
-      <Opening />
-      <About />
-      <Technologies />
-      <Projects />
-      <Contact />
-      <Footer />
-    </Box>
-  );
-};
+    <Layout>
+      <div>hello</div>
+    </Layout>
+  )
+}
 
-export default Home;
+export default Home
