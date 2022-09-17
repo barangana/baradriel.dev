@@ -10,7 +10,7 @@ import { Layout } from '../components'
 const Home: NextPage = () => {
   return (
     <Layout>
-      <div>hello</div>
+      <Box bg='white'>Main Page</Box>
     </Layout>
   )
 }
