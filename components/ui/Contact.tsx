@@ -1,8 +1,8 @@
-import { Button, Link, Flex, Heading, Text } from '@chakra-ui/react'
+import { Button, Flex, Heading, Text } from '@chakra-ui/react'
 import info from '../../utils/info.json'
+import NextLink from 'next/link'
 
-
-// TODO: Revise this to take a form and send it to email instead. 
+// TODO: Revise this to take a form and send it to email instead.
 export const Contact: React.FC = () => {
   return (
     <Flex
@@ -19,9 +19,11 @@ export const Contact: React.FC = () => {
       <Text textAlign='center' pb={8} w={'65%'}>
         {info.contact_text}
       </Text>
-      <Button bg='blue.50' color='white' variant='outline'>
-        <Link href={info.email}>Say Hello</Link>
-      </Button>
+      <NextLink href={info.email} passHref>
+        <Button as='a' bg='blue.50' color='white' variant='outline'>
+          Say Hello
+        </Button>
+      </NextLink>
     </Flex>
   )
 }
