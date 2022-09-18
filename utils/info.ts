@@ -20,10 +20,10 @@ const infos = {
   ],
   what: 'Full-Stack JS Developer',
   github: 'https://github.com/barangana',
-  email: 'baranganadriel@gmail.com',
-  copyrights: `© ${new Date().getFullYear()} all rights reserved.`,
+  email: 'mailto:baranganadriel@gmail.com',
+  copyrights: `© ${new Date().getFullYear()} Designed & Built by Adriel Barangan`,
   resume: '../Barangan-Adriel-CV.pdf',
   linkedin: 'https://www.linkedin.com/in/barangana/',
-};
+}
 
-export default infos;
+export default infos
