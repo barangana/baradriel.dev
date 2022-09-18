@@ -1,7 +1,7 @@
-import info from '../../utils/info'
 import { Flex, IconButton, Link, Stack, Text } from '@chakra-ui/react'
 import { EmailIcon } from '@chakra-ui/icons'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import info from '../../utils/info.json'
 
 type LinkTypes = {
   name: string
@@ -19,7 +19,9 @@ export const Footer: React.FC = () => {
   return (
     <Flex bg='blue.50' color='white' pt={12} pb={12} justify='center'>
       <Stack>
-        <Text align='center'>{info.copyrights}</Text>
+        <Text align='center'>{`© ${new Date().getFullYear()} Designed & Developed by ${
+          info.title
+        }`}</Text>
         <Stack direction='row' justify='center'>
           {Links.map((link) => (
             <Link key={link.name} href={link.href}>

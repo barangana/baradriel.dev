@@ -11,7 +11,7 @@ import {
   MenuItem,
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
-import info from '../../utils/info'
+import info from '../../utils/info.json'
 
 interface ItemLinkProps {
   href: string
