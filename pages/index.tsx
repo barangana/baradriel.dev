@@ -1,9 +1,14 @@
 import type { NextPage } from 'next'
 
-import { Layout } from '../components'
+import { Contact, Layout } from '../components'
 
 const Home: NextPage = () => {
-  return <Layout>Main Content</Layout>
+  return (
+    <Layout>
+      Main Content
+      <Contact />
+    </Layout>
+  )
 }
 
 export default Home
