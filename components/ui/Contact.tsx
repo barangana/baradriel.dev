@@ -11,12 +11,12 @@ export const Contact: React.FC = () => {
       align='center'
       direction='column'
       mt={12}
-      p={[12, 12, 36]}
+      p={[6, 0, 36]}
     >
-      <Heading size='lg' pb={8}>
+      <Heading size='lg' pt='8' pb='8' textAlign='center'>
         {info.contact}
       </Heading>
-      <Text textAlign='center' pb={8} w={'65%'}>
+      <Text textAlign='center' pb='8' w={[64, 96]}>
         {info.contact_text}
       </Text>
       <NextLink href={info.email} passHref>

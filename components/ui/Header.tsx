@@ -9,6 +9,7 @@ import {
   MenuButton,
   MenuList,
   MenuItem,
+
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import info from '../../utils/info.json'
@@ -37,7 +38,7 @@ const ItemLink: React.FC<ItemLinkProps> = ({ href, children }) => {
 
 export const Header: React.FC = () => {
   return (
-    <Flex bg='blue.50' as='nav' justify={['flex-start', 'flex-start']} p={2}>
+    <Flex bg='blue.50' as='nav' justify='space-between' color='white' p={2}>
       <Stack
         direction={'row'}
         display={['none', 'none', 'flex', 'flex']}
@@ -47,10 +48,12 @@ export const Header: React.FC = () => {
         <ItemLink href='/'>Project</ItemLink>
         <ItemLink href='/'>Skills</ItemLink>
         <ItemLink href='/'>Contact</ItemLink>
+      </Stack>
+      <Flex align='center' display={['none', 'none', 'flex', 'flex']}>
         <Button onClick={openResume} variant='outline' color='white'>
           Resume
         </Button>
-      </Stack>
+      </Flex>
 
       <Menu isLazy>
         <MenuButton

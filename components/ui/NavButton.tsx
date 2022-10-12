@@ -1,14 +1,14 @@
-import { FC } from 'react';
+import { FC } from 'react'
 
-import { Flex, Box, Link } from '@chakra-ui/react';
+import { Flex, Box, Link } from '@chakra-ui/react'
 
 type Button = {
-  label: string;
-  link: string;
-};
+  label: string
+  link: string
+}
 
 interface ButtonProps {
-  buttons: Button[];
+  buttons: Button[]
 }
 
 const NavButton: FC<ButtonProps> = ({ buttons }) => {
@@ -25,10 +25,10 @@ const NavButton: FC<ButtonProps> = ({ buttons }) => {
               {button.label}
             </Link>
           </Box>
-        );
+        )
       })}
     </Flex>
-  );
-};
+  )
+}
 
-export default NavButton;
+export default NavButton
