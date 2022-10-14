@@ -21,7 +21,7 @@ export const Contact: React.FC = () => {
       </Text>
       <NextLink href={info.email} passHref>
         <Button as='a' bg='blue.50' color='white' variant='outline'>
-          Say Hello
+          {info.contact_send_mail}
         </Button>
       </NextLink>
     </Flex>

@@ -1,11 +1,12 @@
 import type { NextPage } from 'next'
 
-import { Contact, Layout } from '../components'
+import { Cards, Contact, Layout } from '../components'
 
 const Home: NextPage = () => {
   return (
     <Layout>
       Main Content
+      <Cards />
       <Contact />
     </Layout>
   )
