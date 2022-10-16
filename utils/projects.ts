@@ -1,40 +1,33 @@
+export interface ProjectsProps {
+  id: number
+  title: string
+  description: string
+  short_description: string
+  link?: string
+  source: string
+}
+
 const projects = [
   {
     id: 1,
-    title: 'CipherPact Landing Page',
+    title: 'Drift List',
     description:
-      "CipherPact's landing page which serves as a static website to display features of the CipherPact Frontend application.",
-    status: 'In progress',
-    tech: 'Next.js, Styled-Components',
-    link: 'https://github.com/CipherSpell/cipherpact-landing',
+      'A website to display top, popular and upcoming anime as well as mangas with the use of a public API. Allow users to search for a specific show or manga and provides extensive details.',
+    short_description:
+      'A website to display top, popular, upcoming anime and mangas.',
+    link: 'https://drift-list.vercel.app/',
+    source: 'https://github.com/barangana/drift-list',
   },
   {
     id: 2,
-    title: 'Anime Search',
+    title: 'Calodesign',
     description:
-      'Utilizes the Jikan API and makes GET requests to the endpoint. Returns data and displays general information about the show.',
-    status: 'Completed (To go back and improve)',
-    tech: 'React.js, Jikan API',
-    link: 'https://github.com/barangana/anime-database-search',
+      'A freelance project for an interior design company called Calodesign. Implemented responsive pages and components. Data and images are stored on a content management system to allow accessed users to add new projects, designs or blogs.',
+    short_description:
+      'A freelance project for an interior design company called Calodesign.',
+    link: '/',
+    source: 'https://github.com/barangana/calodesign',
   },
-  {
-    id: 3,
-    title: 'Movie Application',
-    description:
-      'Allows the user to create an account, search for movies, store movies as liked movies, leave comments and stars.',
-    status: 'To go back',
-    tech: 'React.js, Node.js, Express, MongoDB, SCSS, TMDB Api',
-    link: 'https://github.com/barangana/movie-db-app',
-  },
-  {
-    id: 4,
-    title: 'CipherPact Application',
-    description:
-      'Frontend application of CipherPact. A suite of financial agreements on Cardano and Ergo. Allows escrows with collateral, zero-coupon bonds and contract for differences into smart contracts into a form of web user interface.',
-    status: 'In progress',
-    tech: 'React.js, TypeScript, Styled-Components, Ergo, Blockfrost',
-    link: 'https://github.com/CipherSpell/cipherpact-frontend',
-  },
-];
+]
 
-export default projects;
+export default projects

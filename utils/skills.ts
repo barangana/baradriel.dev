@@ -15,9 +15,9 @@ import {
   SiPostman,
   SiMongodb,
   SiSubversion,
-} from 'react-icons/si';
+} from 'react-icons/si'
 
-import { FaNodeJs } from 'react-icons/fa';
+import { FaNodeJs } from 'react-icons/fa'
 
 const knowledge = [
   {
@@ -55,6 +55,6 @@ const knowledge = [
       { name: 'Subversion', img: SiSubversion },
     ],
   },
-];
+]
 
-export default knowledge;
+export default knowledge

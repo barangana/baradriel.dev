@@ -1,9 +1,8 @@
-import { FC } from 'react';
-import info from '../utils/info';
-import Image from 'next/image';
+import { FC } from 'react'
+import Image from 'next/image'
 
 // Styles
-import { Heading, Box, Text, SimpleGrid, Flex } from '@chakra-ui/react';
+import { Heading, Box, Text, SimpleGrid, Flex } from '@chakra-ui/react'
 
 const About: FC = () => {
   return (
@@ -37,7 +36,7 @@ const About: FC = () => {
                   <Box key={i} pb='2' color='brand.600' fontWeight='bold'>
                     {tech}
                   </Box>
-                );
+                )
               })}
             </SimpleGrid>
           </Box>
@@ -47,7 +46,7 @@ const About: FC = () => {
         </SimpleGrid>
       </Box>
     </Flex>
-  );
-};
+  )
+}
 
-export default About;
+export default About
