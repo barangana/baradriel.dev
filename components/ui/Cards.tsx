@@ -13,7 +13,7 @@ interface CardProps {
 
 export const Cards: React.FC<CardProps> = ({ project }) => {
   return (
-    <Box bg='papayawhip' h='400px' border='1px solid'>
+    <Box bg='papayawhip' h='400px'>
       <Box pt='8' textAlign='center'>
         <Image width='250' height='150' src='/test.png' alt='test' />
       </Box>
@@ -27,7 +27,7 @@ export const Cards: React.FC<CardProps> = ({ project }) => {
         <Link href={project.source}>
           <Button w='64'>{info.github_title}</Button>
         </Link>
-        <Link href={project.link}>
+        <Link href={project.link ? project.link : '/'}>
           <Button w='64'>{info.visit}</Button>
         </Link>
       </Stack>
