@@ -10,7 +10,7 @@ type LinkTypes = {
 }
 
 const Links: LinkTypes[] = [
-  { name: 'GitHub', href: info.github, icon: <FaGithub /> },
+  { name: 'GitHub', href: info.github_url, icon: <FaGithub /> },
   { name: 'LinkedIn', href: info.linkedin, icon: <FaLinkedin /> },
   { name: 'Email', href: info.email, icon: <EmailIcon /> },
 ]

@@ -13,7 +13,7 @@ interface CardProps {
 
 export const Cards: React.FC<CardProps> = ({ project }) => {
   return (
-    <Box bg='papayawhip' h='400px'>
+    <Box h='400px' borderRadius='4'>
       <Box pt='8' textAlign='center'>
         <Image width='250' height='150' src='/test.png' alt='test' />
       </Box>
