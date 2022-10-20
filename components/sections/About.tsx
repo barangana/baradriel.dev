@@ -10,29 +10,37 @@ import Image from 'next/image'
 import React from 'react'
 import info from '../../utils/info.json'
 
+//TODO: Fix image when on responsive (currently removed)
+
 const StyledChakraImage = chakra(Image, {
-  shouldForwardProp: (prop) => ['width', 'height', 'src', 'alt'].includes(prop),
+  shouldForwardProp: (prop) => ['layout', 'src', 'alt'].includes(prop),
 })
 
 export const About = () => {
   return (
     <Box>
       <SimpleGrid
-        columns={2}
-        gridTemplateColumns='auto 1fr'
+        columns={[1, 2]}
         gap='10'
         mt='12'
-        mb='12'
+        mb={['12', '24', '24,', '12']}
+        gridTemplateColumns='auto 1fr'
       >
-        <StyledChakraImage
-          src='/me.jpg'
-          alt='Image of Adriel'
-          width='325'
-          height='325'
-          borderRadius='6'
-        />
+        <Box
+          position='relative'
+          w='325px'
+          h='325px'
+          display={['none', 'none', 'flex', 'flex']}
+        >
+          <StyledChakraImage
+            src='/me.jpg'
+            alt='Image of Adriel'
+            layout='fill'
+            borderRadius='6'
+          />
+        </Box>
         <Box h='325px'>
-          <Box my='16' mx='12'>
+          <Box my={[0, 16, 0, 16]} mx={[0, 0]}>
             <Heading size='4xl' pb='4'>
               {info.title}
             </Heading>
@@ -46,7 +54,7 @@ export const About = () => {
           </Box>
         </Box>
       </SimpleGrid>
-      <Divider />
+      <Divider variant='white' />
     </Box>
   )
 }
