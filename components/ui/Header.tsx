@@ -9,7 +9,6 @@ import {
   MenuButton,
   MenuList,
   MenuItem,
-
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import info from '../../utils/info.json'
@@ -50,7 +49,7 @@ export const Header: React.FC = () => {
         <ItemLink href='/'>Contact</ItemLink>
       </Stack>
       <Flex align='center' display={['none', 'none', 'flex', 'flex']}>
-        <Button onClick={openResume} variant='outline' color='white'>
+        <Button onClick={openResume} variant='primary' color='white'>
           Resume
         </Button>
       </Flex>
