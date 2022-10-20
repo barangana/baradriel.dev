@@ -21,12 +21,12 @@ export const Contact: React.FC = () => {
           {info.contact_text}
         </Text>
         <NextLink href={info.email} passHref>
-          <Button as='a' bg='blue.50' color='white' variant='outline'>
+          <Button as='a' bg='blue.50' color='white' variant='primary'>
             {info.contact_send_mail}
           </Button>
         </NextLink>
       </Flex>
-      <Divider />
+      <Divider variant='white' />
     </Box>
   )
 }

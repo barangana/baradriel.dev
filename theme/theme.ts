@@ -1,4 +1,5 @@
 import { extendTheme, ThemeConfig } from '@chakra-ui/react'
+import { Button, Divider } from './components'
 
 const config: ThemeConfig = {
   initialColorMode: 'dark',
@@ -19,6 +20,15 @@ const theme = extendTheme({
       50: '#1A202C',
     },
   },
+  components: {
+    Button,
+    Divider,
+  },
+  fonts: {
+    heading: `'Inter', sans-serif`,
+    body: `'Inter', sans-serif`,
+  },
+
   config,
 })
 
