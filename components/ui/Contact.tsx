@@ -5,7 +5,7 @@ import NextLink from 'next/link'
 // TODO: Revise this to take a form and send it to email instead.
 export const Contact: React.FC = () => {
   return (
-    <Box>
+    <Box id='contact'>
       <Flex
         bg='blue.50'
         color='white'

@@ -43,10 +43,8 @@ export const Header: React.FC = () => {
         display={['none', 'none', 'flex', 'flex']}
         align='center'
       >
-        <ItemLink href='/'>About</ItemLink>
-        <ItemLink href='/'>Project</ItemLink>
-        <ItemLink href='/'>Skills</ItemLink>
-        <ItemLink href='/'>Contact</ItemLink>
+        <ItemLink href='#projects'>Projects</ItemLink>
+        <ItemLink href='#contact'>Contact</ItemLink>
       </Stack>
       <Flex align='center' display={['none', 'none', 'flex', 'flex']}>
         <Button onClick={openResume} variant='primary' color='white'>
@@ -63,16 +61,10 @@ export const Header: React.FC = () => {
           display={['flex', 'flex', 'none', 'none']}
         />
         <MenuList bg='black.50'>
-          <ItemLink href='/'>
-            <MenuItem>About</MenuItem>
+          <ItemLink href='#projects'>
+            <MenuItem>Projects</MenuItem>
           </ItemLink>
-          <ItemLink href='/'>
-            <MenuItem>Project</MenuItem>
-          </ItemLink>
-          <ItemLink href='/manga/top-mangas'>
-            <MenuItem>Skills</MenuItem>
-          </ItemLink>
-          <ItemLink href='/search'>
+          <ItemLink href='#contact'>
             <MenuItem>Contact</MenuItem>
           </ItemLink>
         </MenuList>

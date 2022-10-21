@@ -1,4 +1,4 @@
-import { Box, Button, Heading, Stack, Text } from '@chakra-ui/react'
+import { Box, Button, chakra, Heading, Stack, Text } from '@chakra-ui/react'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -11,11 +11,21 @@ interface CardProps {
   project: ProjectsProps
 }
 
+const StyledChakraImage = chakra(Image, {
+  shouldForwardProp: (prop) => ['width', 'height', 'src', 'alt'].includes(prop),
+})
+
 export const Cards: React.FC<CardProps> = ({ project }) => {
   return (
-    <Box h='400px' borderRadius='4'>
+    <Box h='425px' borderRadius='6' border='1px solid white'>
       <Box pt='8' textAlign='center'>
-        <Image width='250' height='150' src='/test.png' alt='test' />
+        <StyledChakraImage
+          width='300'
+          height='150'
+          src={project.image}
+          alt='test'
+          objectFit='cover'
+        />
       </Box>
       <Heading size='md' textAlign='center' pt='8'>
         {project.title}
