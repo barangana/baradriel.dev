@@ -22,7 +22,7 @@ interface ItemLinkProps {
 
 const openResume = (event: any) => {
   event.preventDefault()
-  window.open(`/${info.resume}`)
+  window.open(`${info.resume}`)
 }
 
 const ItemLink: React.FC<ItemLinkProps> = ({ href, children }) => {

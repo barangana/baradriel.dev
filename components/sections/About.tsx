@@ -33,7 +33,7 @@ export const About = () => {
           display={['none', 'none', 'flex', 'flex']}
         >
           <StyledChakraImage
-            src='/me.jpg'
+            src='/images/me.jpg'
             alt='Image of Adriel'
             layout='fill'
             borderRadius='6'

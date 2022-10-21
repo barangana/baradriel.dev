@@ -18,7 +18,7 @@ const projects = [
       'A website to display top, popular, upcoming anime and mangas.',
     link: 'https://drift-list.vercel.app/',
     source: 'https://github.com/barangana/drift-list',
-    image: '/drift-list.png',
+    image: '/images/drift-list.png',
   },
   {
     id: 2,
@@ -29,7 +29,7 @@ const projects = [
       'A freelance project for an interior design company called Calodesign.',
     link: '/',
     source: 'https://github.com/barangana/calodesign',
-    image: '/calo.png',
+    image: '/images/calo.png',
   },
 ]
 
