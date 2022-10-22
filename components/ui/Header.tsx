@@ -27,7 +27,7 @@ const openResume = (event: any) => {
 
 const ItemLink: React.FC<ItemLinkProps> = ({ href, children }) => {
   return (
-    <NextLink href={href}>
+    <NextLink href={href} passHref>
       <Link p={4} color='white'>
         {children}
       </Link>

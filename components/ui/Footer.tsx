@@ -24,7 +24,7 @@ export const Footer: React.FC = () => {
         }`}</Text>
         <Stack direction='row' justify='center'>
           {Links.map((link) => (
-            <Link key={link.name} href={link.href}>
+            <Link key={link.name} href={link.href} passHref>
               <IconButton aria-label='Options' icon={link.icon} bg='blue.50' />
             </Link>
           ))}

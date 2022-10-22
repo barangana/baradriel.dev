@@ -34,12 +34,12 @@ export const Cards: React.FC<CardProps> = ({ project }) => {
         {project.short_description}
       </Text>
       <Stack justify='space-around' h='100px' direction='row' mx='2' pt='12'>
-        <Link href={project.source}>
+        <Link href={project.source} passHref>
           <Button w='64' variant='primary'>
             {info.github_title}
           </Button>
         </Link>
-        <Link href={project.link ? project.link : '/'}>
+        <Link href={project.link ? project.link : '/'} passHref>
           <Button w='64' variant='primary'>
             {info.visit}
           </Button>
