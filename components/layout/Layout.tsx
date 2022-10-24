@@ -19,6 +19,15 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
           sizes='16x16'
           href='/images/favicon.ico'
         />
+        <link
+          rel='apple-touch-icon'
+          sizes='16x16'
+          type='image/png'
+          href='/images/favicon.ico'
+        />
+        <link rel='shortcut icon' sizes='16x16' href='/images/favicon.ico' />
+        <meta name='msapplication-TileColor' content='#FFFFFF' />
+        <meta name='msapplication-TileImage' content='/images/favicon.ico' />
         <meta name='author' content={info.title} />
         <meta name='description' content={info.who_description} />
       </Head>
