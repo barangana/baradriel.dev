@@ -1,6 +1,13 @@
-import { Box, Button, chakra, Heading, Stack, Text } from '@chakra-ui/react'
+import {
+  Box,
+  Button,
+  chakra,
+  Heading,
+  Stack,
+  Text,
+  Link,
+} from '@chakra-ui/react'
 import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
 import info from '../../utils/info.json'
 import { ProjectsProps } from '../../utils/projects'
@@ -17,13 +24,13 @@ const StyledChakraImage = chakra(Image, {
 
 export const Cards: React.FC<CardProps> = ({ project }) => {
   return (
-    <Box h='425px' borderRadius='6' border='1px solid white'>
+    <Box h='445px' borderRadius='6' border='1px solid white'>
       <Box pt='8' textAlign='center'>
         <StyledChakraImage
-          width='300'
-          height='150'
+          width='300px'
+          height='150px'
           src={project.image}
-          alt='test'
+          alt={`${project.title}'s image`}
           objectFit='cover'
         />
       </Box>
@@ -34,15 +41,11 @@ export const Cards: React.FC<CardProps> = ({ project }) => {
         {project.short_description}
       </Text>
       <Stack justify='space-around' h='100px' direction='row' mx='2' pt='12'>
-        <Link href={project.source} passHref>
-          <Button w='64' variant='primary'>
-            {info.github_title}
-          </Button>
+        <Link variant='button' href={project.source} isExternal>
+          {info.github_title}
         </Link>
-        <Link href={project.link ? project.link : '/'} passHref>
-          <Button w='64' variant='primary'>
-            {info.visit}
-          </Button>
+        <Link variant='button' href={project.link} isExternal>
+          {info.visit}
         </Link>
       </Stack>
     </Box>

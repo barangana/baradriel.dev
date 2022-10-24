@@ -1,7 +1,8 @@
-import { Flex, IconButton, Link, Stack, Text } from '@chakra-ui/react'
+import { Flex, IconButton, Stack, Text } from '@chakra-ui/react'
 import { EmailIcon } from '@chakra-ui/icons'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import info from '../../utils/info.json'
+import Link from 'next/link'
 
 type LinkTypes = {
   name: string
