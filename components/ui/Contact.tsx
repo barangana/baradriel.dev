@@ -11,10 +11,9 @@ export const Contact: React.FC = () => {
         color='white'
         align='center'
         direction='column'
-        mt={12}
-        p={[6, 0, 36]}
+        my={[12, 0, 48]}
       >
-        <Heading size='3xl' pt='8' pb='8' textAlign='center'>
+        <Heading size='3xl' pb='8' textAlign='center'>
           {info.contact}
         </Heading>
         <Text textAlign='center' pb='8' w={[64, 96]}>
