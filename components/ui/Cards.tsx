@@ -24,7 +24,7 @@ const StyledChakraImage = chakra(Image, {
 
 export const Cards: React.FC<CardProps> = ({ project }) => {
   return (
-    <Box h='445px' borderRadius='6' border='1px solid white'>
+    <Box h='475px' borderRadius='6' border='1px solid white'>
       <Box pt='8' textAlign='center'>
         <StyledChakraImage
           width='300px'
@@ -34,19 +34,23 @@ export const Cards: React.FC<CardProps> = ({ project }) => {
           objectFit='cover'
         />
       </Box>
-      <Heading size='md' textAlign='center' pt='8'>
-        {project.title}
-      </Heading>
-      <Text align='center' pt='8'>
-        {project.short_description}
-      </Text>
-      <Stack justify='space-around' h='100px' direction='row' mx='2' pt='12'>
+      <Box pb='12'>
+        <Heading size='md' textAlign='center' pt='8'>
+          {project.title}
+        </Heading>
+        <Text align='center' pt='8'>
+          {project.short_description}
+        </Text>
+      </Box>
+      <Stack justify='space-around' direction='row' mx='2'>
         <Link variant='button' href={project.source} isExternal>
           {info.github_title}
         </Link>
-        <Link variant='button' href={project.link} isExternal>
-          {info.visit}
-        </Link>
+        {project.link ? (
+          <Link variant='button' href={project.link} isExternal>
+            {info.visit}
+          </Link>
+        ) : null}
       </Stack>
     </Box>
   )

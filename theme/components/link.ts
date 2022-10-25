@@ -11,7 +11,7 @@ export const Link: ComponentSingleStyleConfig = {
       borderWidth: '1px',
       textAlign: 'center',
       py: '4',
-      w: '250px',
+      w: '300px',
       border: '1px solid',
 
       _hover: {

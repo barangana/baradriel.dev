@@ -26,8 +26,7 @@ const projects = [
     description:
       'A freelance project for an interior design company called Calodesign. Implemented responsive pages and components. Data and images are stored on a content management system to allow accessed users to add new projects, designs or blogs.',
     short_description:
-      'A freelance project for an interior design company called Calodesign.',
-    link: '/',
+      'A freelance project for an interior design company called Calodesign. In development.',
     source: 'https://github.com/barangana/calodesign',
     image: '/images/calo.png',
   },
