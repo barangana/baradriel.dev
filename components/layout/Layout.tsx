@@ -14,20 +14,26 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
       <Head>
         <title>{info.website_title}</title>
         <link
+          rel='apple-touch-icon'
+          sizes='72x72'
+          href='/images/icons/apple-touch-icon.png'
+        />
+        <link
+          rel='icon'
+          type='image/png'
+          sizes='32x32'
+          href='/images/icons/favicon-32x32.png'
+        />
+        <link
           rel='icon'
           type='image/png'
           sizes='16x16'
-          href='/images/favicon.ico'
+          href='/images/icons/favicon-16x16.png'
         />
-        <link
-          rel='apple-touch-icon'
-          sizes='16x16'
-          type='image/png'
-          href='/images/favicon.ico'
-        />
-        <link rel='shortcut icon' sizes='16x16' href='/images/favicon.ico' />
-        <meta name='msapplication-TileColor' content='#FFFFFF' />
-        <meta name='msapplication-TileImage' content='/images/favicon.ico' />
+        <link rel='manifest' href='/site.webmanifest' />
+        <link rel='mask-icon' href='/safari-pinned-tab.svg' color='#5bbad5' />
+        <meta name='msapplication-TileColor' content='#da532c' />
+        <meta name='theme-color' content='#ffffff'></meta>
         <meta name='author' content={info.title} />
         <meta name='description' content={info.who_description} />
       </Head>
