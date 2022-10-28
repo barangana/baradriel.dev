@@ -9,6 +9,8 @@ import {
   MenuButton,
   MenuList,
   MenuItem,
+  Box,
+  useColorMode,
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import info from '../../utils/info.json'
@@ -19,6 +21,7 @@ interface ItemLinkProps {
 }
 
 //TODO: Fix header so on mobile it takes up whole space instead of a portion.
+//TODO: Change 'Toggle' to Icon
 
 const openResume = (event: any) => {
   event.preventDefault()
@@ -28,16 +31,15 @@ const openResume = (event: any) => {
 const ItemLink: React.FC<ItemLinkProps> = ({ href, children }) => {
   return (
     <NextLink href={href} passHref>
-      <Link p={4} color='white'>
-        {children}
-      </Link>
+      <Link p={4}>{children}</Link>
     </NextLink>
   )
 }
 
 export const Header: React.FC = () => {
+  const { colorMode, toggleColorMode } = useColorMode()
   return (
-    <Flex bg='blue.50' as='nav' justify='space-between' color='white' p={2}>
+    <Flex as='nav' justify='space-between' p={2}>
       <Stack
         direction={'row'}
         display={['none', 'none', 'flex', 'flex']}
@@ -47,11 +49,15 @@ export const Header: React.FC = () => {
         <ItemLink href='#contact'>Contact</ItemLink>
       </Stack>
       <Flex align='center' display={['none', 'none', 'flex', 'flex']}>
-        <Button onClick={openResume} variant='primary' color='white'>
+        <Box pr='2'>
+          <Button variant='primary' onClick={toggleColorMode}>
+            Toggle {colorMode === 'light' ? 'Dark' : 'Light'}
+          </Button>
+        </Box>
+        <Button onClick={openResume} variant='primary'>
           Resume
         </Button>
       </Flex>
-
       <Menu isLazy>
         <MenuButton
           as={IconButton}

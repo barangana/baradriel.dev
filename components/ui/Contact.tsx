@@ -6,13 +6,7 @@ import NextLink from 'next/link'
 export const Contact: React.FC = () => {
   return (
     <Box id='contact'>
-      <Flex
-        bg='blue.50'
-        color='white'
-        align='center'
-        direction='column'
-        my={[12, 0, 48]}
-      >
+      <Flex align='center' direction='column' my={[12, 0, 48]}>
         <Heading size='3xl' pb='8' textAlign='center'>
           {info.contact}
         </Heading>
@@ -20,12 +14,12 @@ export const Contact: React.FC = () => {
           {info.contact_text}
         </Text>
         <NextLink href={info.email} passHref>
-          <Button as='a' bg='blue.50' color='white' variant='primary'>
+          <Button as='a' variant='primary'>
             {info.contact_send_mail}
           </Button>
         </NextLink>
       </Flex>
-      <Divider variant='white' />
+      <Divider variant='primary' />
     </Box>
   )
 }

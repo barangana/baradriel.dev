@@ -3,11 +3,8 @@ import type { ComponentSingleStyleConfig } from '@chakra-ui/react'
 export const Link: ComponentSingleStyleConfig = {
   variants: {
     button: {
-      bg: '#1A202C',
-      color: 'white',
       fontWeight: 'normal',
       borderRadius: 0,
-      borderColor: 'white',
       borderWidth: '1px',
       textAlign: 'center',
       py: '4',
@@ -15,8 +12,7 @@ export const Link: ComponentSingleStyleConfig = {
       border: '1px solid',
 
       _hover: {
-        bg: 'white',
-        color: 'black',
+        bg: 'rgba(216, 212, 212, 0.7)',
         textDecor: 'none',
       },
     },

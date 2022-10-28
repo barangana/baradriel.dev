@@ -1,16 +1,10 @@
 import { ComponentStyleConfig } from '@chakra-ui/react'
+import { mode } from '@chakra-ui/theme-tools'
 
 export const Divider: ComponentStyleConfig = {
-  variants: {
-    white: {
-      borderColor: '#ffffff',
-      borderWidth: '2px',
-      borderStyle: 'solid',
-    },
-    black: {
-      borderColor: '#000000',
-      borderWidth: '2px',
-      borderStyle: 'solid',
-    },
+  baseStyle: {
+    borderColor: mode('black.100', 'white'),
+    borderWidth: '2px',
+    borderStyle: 'solid',
   },
 }

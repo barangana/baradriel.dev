@@ -3,7 +3,7 @@ import { ChakraProvider } from '@chakra-ui/react'
 import theme from '../theme/theme'
 import Script from 'next/script'
 
-function MyApp({ Component, pageProps }: AppProps) {
+const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <ChakraProvider theme={theme}>
       <Script
@@ -22,4 +22,5 @@ function MyApp({ Component, pageProps }: AppProps) {
     </ChakraProvider>
   )
 }
+
 export default MyApp

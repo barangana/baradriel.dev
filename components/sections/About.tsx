@@ -10,8 +10,6 @@ import Image from 'next/image'
 import React from 'react'
 import info from '../../utils/info.json'
 
-//TODO: Fix image when on responsive (currently removed)
-
 const StyledChakraImage = chakra(Image, {
   shouldForwardProp: (prop) => ['layout', 'src', 'alt'].includes(prop),
 })
@@ -54,7 +52,7 @@ export const About = () => {
           </Box>
         </Box>
       </SimpleGrid>
-      <Divider variant='white' />
+      <Divider variant='primary' />
     </Box>
   )
 }

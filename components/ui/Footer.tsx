@@ -18,7 +18,7 @@ const Links: LinkTypes[] = [
 
 export const Footer: React.FC = () => {
   return (
-    <Flex bg='blue.50' color='white' pt={12} pb={12} justify='center'>
+    <Flex pt={12} pb={12} justify='center'>
       <Stack>
         <Text align='center'>{`© ${new Date().getFullYear()} Designed & Developed by ${
           info.title
@@ -26,7 +26,7 @@ export const Footer: React.FC = () => {
         <Stack direction='row' justify='center'>
           {Links.map((link) => (
             <Link key={link.name} href={link.href} passHref>
-              <IconButton aria-label='Options' icon={link.icon} bg='blue.50' />
+              <IconButton aria-label='Options' icon={link.icon} />
             </Link>
           ))}
         </Stack>

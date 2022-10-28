@@ -1,5 +1,6 @@
 import { extendTheme, ThemeConfig } from '@chakra-ui/react'
 import { Button, Divider, Link } from './components'
+import { mode } from '@chakra-ui/theme-tools'
 
 const config: ThemeConfig = {
   initialColorMode: 'dark',
@@ -7,14 +8,19 @@ const config: ThemeConfig = {
 }
 
 const theme = extendTheme({
+  styles: {
+    global: (props: any) => ({
+      body: {
+        bg: mode('white', 'black.50')(props),
+        color: mode('black.100', 'white'),
+      },
+    }),
+  },
   colors: {
-    brand: {
-      100: '#0D1B2A',
-      200: '#1B263B',
-      300: '#415A77',
-      400: '#778DA9',
-      500: '#E0E1DD',
-      600: '#9AA5C4',
+    black: {
+      50: '#201C1C',
+      100: '#D8D4D4',
+      200: '#080404',
     },
     blue: {
       50: '#1A202C',

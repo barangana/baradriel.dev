@@ -24,7 +24,7 @@ const StyledChakraImage = chakra(Image, {
 
 export const Cards: React.FC<CardProps> = ({ project }) => {
   return (
-    <Box h='475px' borderRadius='6' border='1px solid white'>
+    <Box h='475px' borderRadius='6' border='1px solid'>
       <Box pt='8' textAlign='center'>
         <StyledChakraImage
           width='300px'

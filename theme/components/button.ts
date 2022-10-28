@@ -3,16 +3,14 @@ import type { ComponentSingleStyleConfig } from '@chakra-ui/react'
 export const Button: ComponentSingleStyleConfig = {
   variants: {
     primary: {
-      bg: '#1A202C',
-      color: 'white',
+      // color: 'white',
       fontWeight: 'normal',
       borderRadius: 0,
-      borderColor: 'white',
       borderWidth: '1px',
+      border: '1px solid',
 
       _hover: {
-        bg: 'white',
-        color: 'black',
+        bgColor: 'rgba(216, 212, 212, 0.7)',
       },
     },
   },

@@ -17,7 +17,7 @@ export const Projects = () => {
           <Cards key={project.id} project={project} />
         ))}
       </SimpleGrid>
-      <Divider variant='white' />
+      <Divider variant='primary' />
     </Box>
   )
 }
