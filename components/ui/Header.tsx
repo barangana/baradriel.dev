@@ -10,7 +10,6 @@ import {
   MenuList,
   MenuItem,
   Box,
-  useColorMode,
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import info from '../../utils/info.json'
@@ -21,7 +20,6 @@ interface ItemLinkProps {
 }
 
 //TODO: Fix header so on mobile it takes up whole space instead of a portion.
-//TODO: Change 'Toggle' to Icon
 
 const openResume = (event: any) => {
   event.preventDefault()
@@ -37,7 +35,6 @@ const ItemLink: React.FC<ItemLinkProps> = ({ href, children }) => {
 }
 
 export const Header: React.FC = () => {
-  const { colorMode, toggleColorMode } = useColorMode()
   return (
     <Flex as='nav' justify='space-between' p={2}>
       <Stack
@@ -49,11 +46,6 @@ export const Header: React.FC = () => {
         <ItemLink href='#contact'>Contact</ItemLink>
       </Stack>
       <Flex align='center' display={['none', 'none', 'flex', 'flex']}>
-        <Box pr='2'>
-          <Button variant='primary' onClick={toggleColorMode}>
-            Toggle {colorMode === 'light' ? 'Dark' : 'Light'}
-          </Button>
-        </Box>
         <Button onClick={openResume} variant='primary'>
           Resume
         </Button>
