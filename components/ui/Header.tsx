@@ -2,13 +2,13 @@ import { HamburgerIcon } from '@chakra-ui/icons'
 import {
   Flex,
   Stack,
-  Link,
   Button,
   IconButton,
   Menu,
   MenuButton,
   MenuList,
   MenuItem,
+  Text,
 } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import NextLink from 'next/link'
@@ -29,7 +29,14 @@ const openResume = (event: any) => {
 const ItemLink: React.FC<ItemLinkProps> = ({ href, children }) => {
   return (
     <NextLink href={href} passHref>
-      <Link p={4}>{children}</Link>
+      <Text
+        p={4}
+        as='b'
+        cursor='pointer'
+        _hover={{ textDecoration: 'underline' }}
+      >
+        {children}
+      </Text>
     </NextLink>
   )
 }
