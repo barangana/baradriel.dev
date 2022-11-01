@@ -6,6 +6,7 @@ import {
   SimpleGrid,
   Text,
 } from '@chakra-ui/react'
+import { motion } from 'framer-motion'
 import Image from 'next/image'
 import React from 'react'
 import info from '../../utils/info.json'
@@ -13,6 +14,8 @@ import info from '../../utils/info.json'
 const StyledChakraImage = chakra(Image, {
   shouldForwardProp: (prop) => ['layout', 'src', 'alt'].includes(prop),
 })
+
+const MotionBox = motion(Box)
 
 export const About = () => {
   return (
@@ -37,7 +40,12 @@ export const About = () => {
             borderRadius='6'
           />
         </Box>
-        <Box h='325px'>
+        <MotionBox
+          h='325px'
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.2 }}
+        >
           <Box my={[0, 16, 0, 16]} mx={[0, 0]}>
             <Heading size='4xl' pb='4'>
               {info.title}
@@ -50,7 +58,7 @@ export const About = () => {
               HTML, CSS, Javascript, Typescript, React.JS, Next.JS
             </Text>
           </Box>
-        </Box>
+        </MotionBox>
       </SimpleGrid>
       <Divider variant='primary' />
     </Box>

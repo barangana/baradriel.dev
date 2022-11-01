@@ -1,11 +1,25 @@
-import { Box, Divider, Heading, SimpleGrid } from '@chakra-ui/react'
+import { Box, Heading, SimpleGrid } from '@chakra-ui/react'
 import { Cards } from '../'
 import projects from '../../utils/projects'
 import info from '../../utils/info.json'
+import { motion } from 'framer-motion'
+
+const MotionBox = motion(Box)
 
 export const Projects = () => {
   return (
-    <Box mt='12' mb='12' id='projects'>
+    <MotionBox
+      mt='12'
+      id='contact'
+      initial='hidden'
+      whileInView='visible'
+      transition={{ duration: 1 }}
+      viewport={{ once: true }}
+      variants={{
+        visible: { opacity: 1, x: 0 },
+        hidden: { opacity: 0, x: -10 },
+      }}
+    >
       <Heading>{info.projects_title}</Heading>
       <SimpleGrid
         columns={[1, 2, 2, 3]}
@@ -17,7 +31,6 @@ export const Projects = () => {
           <Cards key={project.id} project={project} />
         ))}
       </SimpleGrid>
-      <Divider variant='primary' />
-    </Box>
+    </MotionBox>
   )
 }

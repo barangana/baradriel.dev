@@ -3,7 +3,6 @@ import type { ComponentSingleStyleConfig } from '@chakra-ui/react'
 export const Button: ComponentSingleStyleConfig = {
   variants: {
     primary: {
-      // color: 'white',
       fontWeight: 'normal',
       borderRadius: 0,
       borderWidth: '1px',

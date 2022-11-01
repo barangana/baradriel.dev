@@ -9,7 +9,6 @@ import {
   MenuButton,
   MenuList,
   MenuItem,
-  Box,
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import info from '../../utils/info.json'
