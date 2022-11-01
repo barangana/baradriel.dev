@@ -13,7 +13,7 @@ export const Projects = () => {
       id='contact'
       initial='hidden'
       whileInView='visible'
-      transition={{ duration: 1 }}
+      transition={{ duration: 0.5 }}
       viewport={{ once: true }}
       variants={{
         visible: { opacity: 1, x: 0 },

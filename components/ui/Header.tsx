@@ -10,6 +10,7 @@ import {
   MenuList,
   MenuItem,
 } from '@chakra-ui/react'
+import { motion } from 'framer-motion'
 import NextLink from 'next/link'
 import info from '../../utils/info.json'
 
@@ -33,22 +34,34 @@ const ItemLink: React.FC<ItemLinkProps> = ({ href, children }) => {
   )
 }
 
+const MotionStack = motion(Stack)
+const MotionFlex = motion(Flex)
+
 export const Header: React.FC = () => {
   return (
     <Flex as='nav' justify='space-between' p={2}>
-      <Stack
+      <MotionStack
         direction={'row'}
         display={['none', 'none', 'flex', 'flex']}
         align='center'
+        initial={{ y: -10 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.4 }}
       >
         <ItemLink href='#projects'>Projects</ItemLink>
         <ItemLink href='#contact'>Contact</ItemLink>
-      </Stack>
-      <Flex align='center' display={['none', 'none', 'flex', 'flex']}>
+      </MotionStack>
+      <MotionFlex
+        align='center'
+        display={['none', 'none', 'flex', 'flex']}
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        transition={{ delay: 0.2, duration: 0.4 }}
+      >
         <Button onClick={openResume} variant='primary'>
           Resume
         </Button>
-      </Flex>
+      </MotionFlex>
       <Menu isLazy>
         <MenuButton
           as={IconButton}
