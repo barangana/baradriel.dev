@@ -31,6 +31,16 @@ const projects = [
     source: 'https://github.com/barangana/calodesign',
     image: '/images/calo.png',
   },
+  {
+    id: 3,
+    title: 'Bookmarker',
+    description:
+      'A project meant to track the books you are reading or read before. The main purpose is to keep track of the last page you last read and for keeping notes.',
+    short_description:
+      'A project meant to track the books you are currently reading or read before. In development.',
+    source: 'https://github.com/barangana/bookmarker',
+    image: '/images/no-image.jpg',
+  },
 ]
 
 export default projects

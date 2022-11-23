@@ -1,8 +1,8 @@
-import { Flex, IconButton, Stack, Text } from '@chakra-ui/react'
+import { Flex, IconButton, Stack, Text, Link } from '@chakra-ui/react'
 import { EmailIcon } from '@chakra-ui/icons'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import info from '../../utils/info.json'
-import Link from 'next/link'
+// import Link from 'next/link'
 
 type LinkTypes = {
   name: string
@@ -25,7 +25,7 @@ export const Footer: React.FC = () => {
         }`}</Text>
         <Stack direction='row' justify='center'>
           {Links.map((link) => (
-            <Link key={link.name} href={link.href} passHref>
+            <Link key={link.name} href={link.href} isExternal>
               <IconButton aria-label='Options' icon={link.icon} />
             </Link>
           ))}
