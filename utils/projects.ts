@@ -6,6 +6,7 @@ export interface ProjectsProps {
   link?: string
   source: string
   image: string
+  stack: string[]
 }
 
 const projects = [
@@ -19,6 +20,7 @@ const projects = [
     link: 'https://drift-list.vercel.app/',
     source: 'https://github.com/barangana/drift-list',
     image: '/images/drift-list.png',
+    stack: ['NextJS', 'ChakraUI', 'JikanAPI'],
   },
   {
     id: 2,
@@ -30,6 +32,7 @@ const projects = [
     link: 'https://calodesign.vercel.app/',
     source: 'https://github.com/barangana/calodesign',
     image: '/images/calo.png',
+    stack: ['NextJS', 'ChakraUI', 'Sanity'],
   },
   {
     id: 3,
@@ -40,6 +43,7 @@ const projects = [
       'A project meant to track the books you are currently reading or read before. In development.',
     source: 'https://github.com/barangana/bookmarker',
     image: '/images/no-image.jpg',
+    stack: ['NextJS', 'Prisma', 'Postgres', 'TailwindCSS'],
   },
 ]
 

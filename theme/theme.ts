@@ -1,5 +1,5 @@
 import { extendTheme, ThemeConfig } from '@chakra-ui/react'
-import { Button, Divider, Link } from './components'
+import { Button, Divider, Link, Tag } from './components'
 import { mode } from '@chakra-ui/theme-tools'
 
 const config: ThemeConfig = {
@@ -30,6 +30,7 @@ const theme = extendTheme({
     Button,
     Divider,
     Link,
+    Tag,
   },
   fonts: {
     heading: `'Inter', sans-serif`,
