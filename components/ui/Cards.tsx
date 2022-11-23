@@ -35,8 +35,8 @@ export const Cards: React.FC<CardProps> = ({ project }) => {
         </Text>
       </Box>
       <Stack justify='space-evenly' direction='row' pb='6'>
-        {project.stack.map((tech) => (
-          <Tag>{tech}</Tag>
+        {project.stack.map((tech, i) => (
+          <Tag key={i}>{tech}</Tag>
         ))}
       </Stack>
       <Stack justify='space-around' direction='row' mx='2'>
