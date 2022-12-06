@@ -14,6 +14,7 @@ import {
 import { motion } from 'framer-motion'
 import NextLink from 'next/link'
 import info from '../../utils/info.json'
+import { useRouter } from 'next/router'
 
 interface ItemLinkProps {
   href: string
@@ -42,10 +43,16 @@ const ItemLink: React.FC<ItemLinkProps> = ({ href, children }) => {
   )
 }
 
-const MotionStack = motion(Stack)
-const MotionFlex = motion(Flex)
-
 export const Header: React.FC = () => {
+  const MotionStack = motion(Stack)
+  const MotionFlex = motion(Flex)
+
+  const { locale = 'en', push, pathname, query, asPath } = useRouter()
+
+  const toggleLanguage = () => {
+    push({ pathname, query }, asPath, { locale: locale === 'en' ? 'fr' : 'en' })
+  }
+
   return (
     <Flex as='nav' justify='space-between' p={2}>
       <MotionStack
@@ -66,9 +73,11 @@ export const Header: React.FC = () => {
         animate={{ y: 0 }}
         transition={{ delay: 0.2, duration: 0.4 }}
       >
-        <Box pr='2'>
-          <Button variant='primary'>FR</Button>
-        </Box>
+        {/* <Box pr='2'>
+          <Button variant='primary' onClick={toggleLanguage}>
+            {locale === 'en' ? 'FR' : 'EN'}
+          </Button>
+        </Box> */}
         <Button onClick={openResume} variant='primary'>
           Resume
         </Button>
