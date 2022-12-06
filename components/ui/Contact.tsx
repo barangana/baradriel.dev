@@ -20,7 +20,7 @@ export const Contact: React.FC = () => {
       }}
     >
       <Divider variant='primary' />
-      <Flex align='center' direction='column' my={[12, 0, 48]}>
+      <Flex align='center' direction='column' my={[24, 0, 48]}>
         <Heading size='3xl' pb='8' textAlign='center'>
           {info.contact}
         </Heading>

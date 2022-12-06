@@ -9,6 +9,7 @@ import {
   MenuList,
   MenuItem,
   Text,
+  Box,
 } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import NextLink from 'next/link'
@@ -65,6 +66,9 @@ export const Header: React.FC = () => {
         animate={{ y: 0 }}
         transition={{ delay: 0.2, duration: 0.4 }}
       >
+        <Box pr='2'>
+          <Button variant='primary'>FR</Button>
+        </Box>
         <Button onClick={openResume} variant='primary'>
           Resume
         </Button>

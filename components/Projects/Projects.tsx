@@ -9,7 +9,7 @@ const MotionBox = motion(Box)
 export const Projects = () => {
   return (
     <MotionBox
-      mt='12'
+      mt={['14', '', '14', '16']}
       id='contact'
       initial='hidden'
       whileInView='visible'

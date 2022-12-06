@@ -4,8 +4,6 @@ import React from 'react'
 import info from '../../utils/info.json'
 import { ProjectsProps } from '../../utils/projects'
 
-//TODO: Fix cards when tech stack is included
-
 interface CardProps {
   project: ProjectsProps
 }

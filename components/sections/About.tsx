@@ -24,7 +24,7 @@ export const About = () => {
         columns={[1, 2]}
         gap='10'
         mt='12'
-        mb={['12', '24', '24,', '12']}
+        mb={['48', '36', '24,', '12']}
         gridTemplateColumns='auto 1fr'
       >
         <Box
@@ -46,14 +46,17 @@ export const About = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.2 }}
         >
-          <Box my={[0, 16, 0, 16]} mx={[0, 0]}>
+          <Box my={[0, 16, 0, 4]} mx={[0, 0]}>
             <Heading size='4xl' pb='4'>
               {info.title}
             </Heading>
             <Heading size='lg' pb='6'>
               {info.what}
             </Heading>
-            <Text pb='6'>{info.who}</Text>
+            <Text pb='6' w={['250px', '', '350px', '625px', '750px']}>
+              {info.who}
+            </Text>
+            <Text>Some tech I work with on a day to day basis:</Text>
             <Text as='b'>
               HTML, CSS, Javascript, Typescript, React.JS, Next.JS
             </Text>
