@@ -10,14 +10,20 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import React from 'react'
 import info from '../../utils/info.json'
-
-const StyledChakraImage = chakra(Image, {
-  shouldForwardProp: (prop) => ['layout', 'src', 'alt'].includes(prop),
-})
-
-const MotionBox = motion(Box)
+import { en, fr } from '../../utils/info'
+import { useRouter } from 'next/router'
 
 export const About = () => {
+  const StyledChakraImage = chakra(Image, {
+    shouldForwardProp: (prop) => ['layout', 'src', 'alt'].includes(prop),
+  })
+
+  const MotionBox = motion(Box)
+
+  const router = useRouter()
+  const { locale } = router
+  const t = locale === 'en' ? en : fr
+
   return (
     <Box>
       <SimpleGrid
@@ -51,7 +57,7 @@ export const About = () => {
               {info.title}
             </Heading>
             <Heading size='lg' pb='6'>
-              {info.what}
+              {t.what}
             </Heading>
             <Text pb='6' w={['250px', '', '350px', '625px', '750px']}>
               {info.who}
