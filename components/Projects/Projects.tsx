@@ -1,12 +1,16 @@
 import { Box, Heading, SimpleGrid } from '@chakra-ui/react'
 import { Cards } from '../'
 import projects from '../../utils/projects'
-import info from '../../utils/info.json'
 import { motion } from 'framer-motion'
-
-const MotionBox = motion(Box)
+import { en, fr } from '../../utils/info'
+import { useRouter } from 'next/router'
 
 export const Projects = () => {
+  const MotionBox = motion(Box)
+  const router = useRouter()
+  const { locale } = router
+  const t = locale === 'en' ? en : fr
+
   return (
     <MotionBox
       mt={['14', '', '14', '16']}
@@ -20,7 +24,7 @@ export const Projects = () => {
         hidden: { opacity: 0, x: -10 },
       }}
     >
-      <Heading>{info.projects_title}</Heading>
+      <Heading>{t.projects_title}</Heading>
       <SimpleGrid
         columns={[1, 2, 2, 3]}
         spacing={['6', '6', '8', '10', '24']}

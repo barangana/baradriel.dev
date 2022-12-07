@@ -9,7 +9,6 @@ import {
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import React from 'react'
-import info from '../../utils/info.json'
 import { en, fr } from '../../utils/info'
 import { useRouter } from 'next/router'
 
@@ -54,15 +53,15 @@ export const About = () => {
         >
           <Box my={[0, 16, 0, 4]} mx={[0, 0]}>
             <Heading size='4xl' pb='4'>
-              {info.title}
+              {t.title}
             </Heading>
             <Heading size='lg' pb='6'>
               {t.what}
             </Heading>
             <Text pb='6' w={['250px', '', '350px', '625px', '750px']}>
-              {info.who}
+              {t.who}
             </Text>
-            <Text>Some tech I work with on a day to day basis:</Text>
+            <Text>{t.some_tech}</Text>
             <Text as='b'>
               HTML, CSS, Javascript, Typescript, React.JS, Next.JS
             </Text>

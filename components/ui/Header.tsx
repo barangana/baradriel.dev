@@ -14,6 +14,7 @@ import {
 import { motion } from 'framer-motion'
 import NextLink from 'next/link'
 import info from '../../utils/info.json'
+import { en, fr } from '../../utils/info'
 import { useRouter } from 'next/router'
 
 interface ItemLinkProps {
@@ -52,6 +53,7 @@ export const Header: React.FC = () => {
   const toggleLanguage = () => {
     push({ pathname, query }, asPath, { locale: locale === 'en' ? 'fr' : 'en' })
   }
+  const t = locale === 'en' ? en : fr
 
   return (
     <Flex as='nav' justify='space-between' p={2}>
@@ -63,7 +65,7 @@ export const Header: React.FC = () => {
         animate={{ y: 0 }}
         transition={{ duration: 0.4 }}
       >
-        <ItemLink href='#projects'>Projects</ItemLink>
+        <ItemLink href='#projects'>{t.projects}</ItemLink>
         <ItemLink href='#contact'>Contact</ItemLink>
       </MotionStack>
       <MotionFlex
@@ -73,11 +75,11 @@ export const Header: React.FC = () => {
         animate={{ y: 0 }}
         transition={{ delay: 0.2, duration: 0.4 }}
       >
-        {/* <Box pr='2'>
+        <Box pr='2'>
           <Button variant='primary' onClick={toggleLanguage}>
             {locale === 'en' ? 'FR' : 'EN'}
           </Button>
-        </Box> */}
+        </Box>
         <Button onClick={openResume} variant='primary'>
           Resume
         </Button>
@@ -92,7 +94,7 @@ export const Header: React.FC = () => {
         />
         <MenuList bg='black.50'>
           <ItemLink href='#projects'>
-            <MenuItem>Projects</MenuItem>
+            <MenuItem>{t.contact}</MenuItem>
           </ItemLink>
           <ItemLink href='#contact'>
             <MenuItem>Contact</MenuItem>

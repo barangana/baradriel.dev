@@ -2,11 +2,18 @@ import { Box, Button, Divider, Flex, Heading, Text } from '@chakra-ui/react'
 import info from '../../utils/info.json'
 import NextLink from 'next/link'
 import { motion } from 'framer-motion'
+import { useRouter } from 'next/router'
+import { en, fr } from '../../utils/info'
 
 // TODO: Revise this to take a form and send it to email instead.
-const MotionBox = motion(Box)
 
 export const Contact: React.FC = () => {
+  const MotionBox = motion(Box)
+
+  const router = useRouter()
+  const { locale } = router
+  const t = locale === 'en' ? en : fr
+
   return (
     <MotionBox
       id='contact'
@@ -21,15 +28,15 @@ export const Contact: React.FC = () => {
     >
       <Divider variant='primary' />
       <Flex align='center' direction='column' my={[24, 0, 48]}>
-        <Heading size='3xl' pb='8' textAlign='center'>
-          {info.contact}
+        <Heading size='3xl' pb='8' textAlign='center' w={['', '750px']}>
+          {t.contact}
         </Heading>
         <Text textAlign='center' pb='8' w={[64, 96]}>
-          {info.contact_text}
+          {t.contact_text}
         </Text>
         <NextLink href={info.email} passHref>
           <Button as='a' variant='primary'>
-            {info.contact_send_mail}
+            {t.contact_send_mail}
           </Button>
         </NextLink>
       </Flex>

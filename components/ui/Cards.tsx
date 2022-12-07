@@ -1,5 +1,6 @@
 import { Box, chakra, Heading, Stack, Text, Link, Tag } from '@chakra-ui/react'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 import React from 'react'
 import info from '../../utils/info.json'
 import { ProjectsProps } from '../../utils/projects'
@@ -8,11 +9,19 @@ interface CardProps {
   project: ProjectsProps
 }
 
-const StyledChakraImage = chakra(Image, {
-  shouldForwardProp: (prop) => ['width', 'height', 'src', 'alt'].includes(prop),
-})
-
 export const Cards: React.FC<CardProps> = ({ project }) => {
+  const StyledChakraImage = chakra(Image, {
+    shouldForwardProp: (prop) =>
+      ['width', 'height', 'src', 'alt'].includes(prop),
+  })
+
+  const router = useRouter()
+  const { locale } = router
+  const t =
+    locale === 'en'
+      ? project.short_description.en
+      : project.short_description.fr
+
   return (
     <Box h='500px' borderRadius='6' border='1px solid'>
       <Box pt='8' textAlign='center'>
@@ -29,7 +38,7 @@ export const Cards: React.FC<CardProps> = ({ project }) => {
           {project.title}
         </Heading>
         <Text align='center' pt='8'>
-          {project.short_description}
+          {t}
         </Text>
       </Box>
       <Stack justify='space-evenly' direction='row' pb='6'>

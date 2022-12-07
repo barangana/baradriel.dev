@@ -4,12 +4,6 @@ export const en = {
   who: 'Passionate about web development, computer software and hardware. Eager to learn and expand my knowledge on full stack development. Currently freelancing and looking to transition into full time full stack development.',
   who_description:
     'Adriel is Full Stack Developer based in Montreal with an emphasis on the front-end side of things. Currently learning full stack and much more.',
-  about:
-    'Hello! My name is Adriel, I am a full stack developer and I enjoy creating and learning new things. It all started when I was a child and I got hooked on to video games and ended up wanting to learn more on how they were made.',
-  about_two:
-    'Currently, my main focus is to keep on improving my knowledge on technologies and not fall behind. I am continuously learning about programming, software and hardware. My latest interest have been investments and cryptocurrency.',
-  about_three:
-    "Here are some of the technologies I've been working in depth with recently",
   what: 'Front End Developer.',
   github_title: 'GitHub',
   github_url: 'https://github.com/barangana',
@@ -26,34 +20,32 @@ export const en = {
   tech_stack_text: 'Tech Stack',
   projects_title: 'Some of my work ',
   website_title: 'adriel. ',
+  some_tech: 'Some tech I work with on a day to day basis:',
+  projects: 'Projects',
 }
 
 export const fr = {
   title: 'Adriel Barangan',
-  header: 'I love building things for the web.',
-  who: 'Passionate about web development, computer software and hardware. Eager to learn and expand my knowledge on full stack development. Currently freelancing and looking to transition into full time full stack development.',
+  header: "J'aime construire des choses pour le web.",
+  who: "Passionné par le développement web, les logiciels et le matériel informatique. Désireux d'apprendre et d'approfondir mes connaissances sur le développement full stack. Actuellement en freelance et cherche à transitioner au développement full stack à temps plein.",
   who_description:
-    'Adriel is Full Stack Developer based in Montreal with an emphasis on the front-end side of things. Currently learning full stack and much more.',
-  about:
-    'Hello! My name is Adriel, I am a full stack developer and I enjoy creating and learning new things. It all started when I was a child and I got hooked on to video games and ended up wanting to learn more on how they were made.',
-  about_two:
-    'Currently, my main focus is to keep on improving my knowledge on technologies and not fall behind. I am continuously learning about programming, software and hardware. My latest interest have been investments and cryptocurrency.',
-  about_three:
-    "Here are some of the technologies I've been working in depth with recently",
+    "Adriel est un développeur Full Stack basé à Montréal avec une préférence front-end. En train d'approfondir mes connaisances sur le full stack et encore plus.",
   what: 'Developpeur Front End.',
   github_title: 'GitHub',
   github_url: 'https://github.com/barangana',
   email: 'mailto:baranganadriel@gmail.com',
-  copyrights: 'Designed & Built by Adriel Barangan',
+  copyrights: 'Conçu et Construit par Adriel Barangan',
   resume: '/files/Barangan-Adriel-CV.pdf',
   linkedin: 'https://www.linkedin.com/in/barangana/',
-  contact: 'Reach out and say hello!',
+  contact: 'Envoyez moi un message et disez bonjour!',
   contact_text:
-    'Have an idea for a project, want to work together or just chat? Do not be shy and send me an email or a Linkedin message!',
-  contact_send_mail: 'Say Hello',
-  visit: 'Visit this site',
+    'Vous avez une idée de projet, envie de travailler ensemble ou simplement discuter? Ne soyez pas timide et envoyez-moi un email ou un message sur Linkedin!',
+  contact_send_mail: 'Disez Bonjour',
+  visit: 'Visitez ce site',
   description_title: 'Description',
-  tech_stack_text: 'Tech Stack',
-  projects_title: 'Some of my work ',
+  tech_stack_text: 'Stack',
+  projects_title: 'Quelque de mes projets ',
   website_title: 'adriel. ',
+  some_tech: 'Quelques tech avec lesquels je travaille au quotidien:',
+  projects: 'Projets',
 }
