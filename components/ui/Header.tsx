@@ -94,7 +94,7 @@ export const Header: React.FC = () => {
         />
         <MenuList bg='black.50'>
           <ItemLink href='#projects'>
-            <MenuItem>{t.contact}</MenuItem>
+            <MenuItem>{t.projects}</MenuItem>
           </ItemLink>
           <ItemLink href='#contact'>
             <MenuItem>Contact</MenuItem>
