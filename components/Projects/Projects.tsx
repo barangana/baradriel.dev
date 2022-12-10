@@ -14,7 +14,7 @@ export const Projects = () => {
   return (
     <MotionBox
       mt={['14', '', '14', '16']}
-      id='contact'
+      id='projects'
       initial='hidden'
       whileInView='visible'
       transition={{ duration: 0.5 }}
