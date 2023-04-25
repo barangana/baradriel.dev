@@ -35,9 +35,7 @@ export const Contact: React.FC = () => {
           {t.contact_text}
         </Text>
         <NextLink href={info.email} passHref>
-          <Button as='a' variant='primary'>
-            {t.contact_send_mail}
-          </Button>
+          <Button variant='primary'>{t.contact_send_mail}</Button>
         </NextLink>
       </Flex>
       <Divider variant='primary' />

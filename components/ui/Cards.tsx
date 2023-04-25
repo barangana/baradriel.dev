@@ -24,10 +24,10 @@ export const Cards: React.FC<CardProps> = ({ project }) => {
 
   return (
     <Box h='500px' borderRadius='6' border='1px solid'>
-      <Box pt='8' textAlign='center'>
+      <Box pt='8' px='8'>
         <StyledChakraImage
-          width='300px'
-          height='150px'
+          width='300'
+          height='150'
           src={project.image}
           alt={`${project.title}'s image`}
           objectFit='cover'
