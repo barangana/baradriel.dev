@@ -1,5 +1,5 @@
 {
-  "name": "personal-website",
+  "name": "baradriel.dev",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,25 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@chakra-ui/icons": "^2.0.9",
-    "@chakra-ui/react": "^2.3.2",
-    "@emotion/react": "^11.10.4",
-    "@emotion/styled": "^11.10.4",
-    "@fontsource/inter": "^4.5.14",
-    "framer-motion": "^10.12.4",
-    "i18next": "^22.0.8",
-    "next": "^13.3.1",
-    "next-i18next": "^13.0.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-i18next": "^12.0.0",
-    "react-icons": "^4.4.0"
+    "react": "19.0.0-rc-66855b96-20241106",
+    "react-dom": "19.0.0-rc-66855b96-20241106",
+    "next": "15.0.3"
   },
   "devDependencies": {
-    "@types/node": "^18.16.0",
-    "@types/react": "^18.2.0",
-    "eslint": "^8.39.0",
-    "eslint-config-next": "^13.3.1",
-    "typescript": "^5.0.4"
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "eslint": "^8",
+    "eslint-config-next": "15.0.3"
   }
 }
